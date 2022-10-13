@@ -1,5 +1,36 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/demo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .button__nav {
-  font-family: '';
+  font-family: "";
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -11,16 +42,15 @@
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-
-  &:hover {
-    color: rgba(212, 20, 67, 1);
-    background: #ecebeb;
-    border-style: none;
-  }
+}
+.button__nav:hover {
+  color: rgb(212, 20, 67);
+  background: #ecebeb;
+  border-style: none;
 }
 
 .button__header-one {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -32,14 +62,14 @@
   background: #d41443;
   border-radius: 20px;
   cursor: pointer;
-  &:hover {
-    background: #c7133e;
-    color: #ffffff;
-  }
+}
+.button__header-one:hover {
+  background: #c7133e;
+  color: #ffffff;
 }
 
 .button__header-two {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -47,17 +77,18 @@
   width: 138px;
   height: 40px;
   text-align: center;
-  color: rgba(212, 20, 67, 1);
+  color: rgb(212, 20, 67);
   border-style: none;
   background: #ffffff;
   border-radius: 20px;
   cursor: pointer;
-  &:hover {
-    background: #ecebeb;
-  }
 }
+.button__header-two:hover {
+  background: #ecebeb;
+}
+
 .button__about {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -65,18 +96,18 @@
   width: 176px;
   height: 44px;
   text-align: center;
-  color: rgba(212, 20, 67, 1);
+  color: rgb(212, 20, 67);
   border-style: none;
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  &:hover {
-    background: #ecebeb;
-  }
+}
+.button__about:hover {
+  background: #ecebeb;
 }
 
 .button__contacts-one {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -92,7 +123,7 @@
 }
 
 .button__contacts-two {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -106,8 +137,7 @@
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-
-  &:hover {
-    background: #ecebeb;
-  }
 }
+.button__contacts-two:hover {
+  background: #ecebeb;
+}/*# sourceMappingURL=main.css.map */

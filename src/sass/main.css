@@ -42,6 +42,9 @@
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__nav:hover {
   color: rgb(212, 20, 67);
@@ -82,9 +85,12 @@
   background: #ffffff;
   border-radius: 20px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__header-two:hover {
-  background: #ecebeb;
+  background-color: #ecebeb;
 }
 
 .button__about {
@@ -101,9 +107,12 @@
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__about:hover {
-  background: #ecebeb;
+  background-color: #ecebeb;
 }
 
 .button__contacts-one {
@@ -137,7 +146,10 @@
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__contacts-two:hover {
-  background: #ecebeb;
+  background-color: #ecebeb;
 }/*# sourceMappingURL=main.css.map */

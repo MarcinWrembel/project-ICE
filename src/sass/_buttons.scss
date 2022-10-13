@@ -11,6 +11,9 @@
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     color: rgba(212, 20, 67, 1);
@@ -52,8 +55,11 @@
   background: #ffffff;
   border-radius: 20px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background: #ecebeb;
+    background-color: #ecebeb;
   }
 }
 .button__about {
@@ -70,8 +76,11 @@
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background: #ecebeb;
+    background-color: #ecebeb;
   }
 }
 
@@ -106,8 +115,11 @@
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background: #ecebeb;
+    background-color: #ecebeb;
   }
 }

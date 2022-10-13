@@ -39,6 +39,24 @@ img {
   background-position: center;
 }
 
-.mobile-menu {
-  background-color: #E17992;
+.about {
+  background-color: rgb(255, 245, 246);
+}
+.about h3 {
+  color: rgb(255, 165, 186);
+  font-size: 18px;
+}
+.about h2 {
+  color: rgb(212, 20, 67);
+  font-size: 34px;
+}
+.about__text {
+  font-size: 12px;
+  font-weight: 500;
+}
+.about__text--color {
+  color: rgb(0, 0, 0);
+}
+.about__text li {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */

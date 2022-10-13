@@ -1,7 +1,9 @@
 @charset "UTF-8";
 .header {
   background: #ffb8ca;
-} /*
+}
+
+/*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
- *//*# sourceMappingURL=main.css.map */
+ */ /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,4 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-
-// Style dla pliku z przykładem HTML fragmentu
-@use './general' ;
-@import './example';
-@import "./mobile-menu";
-@import "./about";
+@use './general';
+@import './mobile-menu';
+@import './about';
+@import './header';

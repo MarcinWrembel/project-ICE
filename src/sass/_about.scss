@@ -1,16 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Titan+One&display=swap');
+
 .about {
+    text-align: center;
     background-color: rgba(255, 245, 246, 1);
+    font-family: 'Titan One', cursive;
+
+    &__container {
+        max-width: 767px;
+        margin: 0;
+        padding: 0 20px;
+    }
 
     h3 {
+        padding-top: 125px;
       color: rgba(255, 165, 186, 1);
       font-size: 18px;
+      text-transform: uppercase;
     }
     h2 {
     color: rgba(212, 20, 67, 1);
     font-size: 34px;
+    text-transform: uppercase;
     }
 
+
+
     &__text {
+        font-family: 'DM Sans', sans-serif;
+        color: rgba(144, 126, 130, 1);
         font-size: 12px;
         font-weight: 500;
 
@@ -21,5 +39,4 @@
             list-style: none;
         }
     }
-
 }

@@ -1,0 +1,21 @@
+.footer {
+    background-color: #FFF5F6;
+    min-width: 320px;
+
+    &__heading {
+        color: #FFA5BA;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.145;
+        padding: 0 66px 0 22px;
+
+        &--color {
+            color: #D41443;
+            line-height: 1.145;
+            padding: 17px 100px 0 0;
+        }
+    }
+}

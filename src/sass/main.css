@@ -87,6 +87,7 @@ img {
   margin-bottom: 10px;
 }
 .contacts__text {
+  font-weight: 500;
   width: 179px;
   font-size: 12px;
   line-height: 1.5;
@@ -121,4 +122,92 @@ img {
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+}
+.contacts__btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 54px;
+}
+.contacts__btn-locations {
+  width: 161.45px;
+  height: 44px;
+  background: #d41342;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: transparent;
+  margin: 0 auto;
+}
+.contacts__btn-franchise {
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  background: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d41443;
+  border: transparent;
+  margin: 0 auto;
+}
+.contacts__btn-franchise:hover, .contacts__btn-franchise:focus {
+  background: #ecebeb;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    background: linear-gradient(180deg, #ffffff 78px, #fff5f6 78px);
+  }
+  .contacts__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+  .contacts__card {
+    margin: 0;
+    flex-basis: calc((100% - 40px) / 3);
+    height: 544px;
+    padding-left: 31px;
+    padding-top: 50px;
+    margin-bottom: 81px;
+  }
+  .contacts__label {
+    width: 73px;
+    height: 28px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+  .contacts__label--color {
+    width: 138px;
+    background: #c2e297;
+  }
+  .contacts__heading {
+    font-size: 14px;
+    line-height: 1.88;
+    margin-bottom: 14px;
+  }
+  .contacts__text {
+    font-size: 14px;
+    line-height: 1.64;
+    padding-right: 38px;
+  }
+  .contacts__border {
+    margin: 30px 32px 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,21 +1,23 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   background: #ffb8ca;
   position: relative;
-  min-width: 320px;
 
   &__div {
-    padding: 6px 20px;
-  }
-
-  &__block {
     display: flex;
-    align-items: center;
-    margin-bottom: 137px;
-  }
-
-  &__logo {
-    min-width: 199px;
-    height: 50px;
+    padding: 6px 20px 0 20px;
   }
 
   &__logo-link {
@@ -27,61 +29,42 @@
   }
 
   &__menu-toggle {
+    position: absolute;
+    top: 25px;
+    right: 20px;
     stroke: #d41443;
+    cursor: pointer;
+    background: transparent;
+    border: none;
   }
 
-  &__button-buy {
+  &__button {
     display: none;
   }
-
-  &__title {
-    width: 218px;
-    font-family: 'Titan One';
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-
-  &__title-span {
-    font-size: 48px;
-    line-height: 0.965;
-    color: #d41443;
-  }
-}
-
-.menu-toggle {
-  margin-left: auto;
-  padding: 0;
-  outline: none;
-  background-color: transparent;
-  border: none;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  cursor:pointer;
 }
 
 //tablet
 @media (min-width: 768px) {
   .header {
     &__div {
-      padding: 37px 34px 28px 34px;
+      padding: 37px 34px 0 34px;
     }
 
-    &__block {
-      margin-bottom: 15px;
+    &__menu-toggle {
+      top: 52px;
+      right: 224px;
     }
 
-    &__button-buy {
+    &__button {
       display: block;
+      margin-left: auto;
       width: 160px;
       height: 44px;
       border-radius: 22px;
       border: none;
       background: #ffffff;
       font-family: 'DM Sans';
+      font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.31;
@@ -94,21 +77,6 @@
         background: #ecebeb;
       }
     }
-
-    &__title {
-      width: 162px;
-      font-size: 22px;
-      line-height: 1.14;
-      letter-spacing: 0.04em;
-    }
-
-    &__title-span {
-      font-size: 34px;
-      line-height: 0.905;
-    }
-  }
-  .menu-toggle {
-    margin-right: 30px;
   }
 }
 
@@ -116,11 +84,7 @@
 @media (min-width: 1200px) {
   .header {
     &__div {
-      padding: 37px 115px 45px 77px;
-    }
-
-    &__block {
-      margin-bottom: 84px;
+      padding: 37px 115px 0 46px;
     }
 
     &__navigation {
@@ -130,13 +94,15 @@
     }
 
     &__nav-list {
+      padding: 0;
       list-style-type: none;
       display: flex;
       gap: 35px;
     }
 
-    &__nav-element {
+    &__nav-link {
       font-family: 'DM Sans';
+      font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.31;
@@ -168,21 +134,12 @@
       text-decoration: none;
     }
 
-    &__title {
-      width: 277px;
-      font-size: 38px;
-      line-height: 1.16;
-      letter-spacing: 0.04em;
-      margin-left: 69px;
+    &__menu-toggle {
+      display: none;
     }
 
-    &__title-span {
-      font-size: 58px;
-      line-height: 0.905;
+    &__button {
+      margin-left: 0;
     }
-  }
-
-  .menu-toggle {
-    display: none;
   }
 }

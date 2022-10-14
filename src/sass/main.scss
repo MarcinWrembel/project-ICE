@@ -1,12 +1,11 @@
-
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
- 
+
 @use './general';
+@import './header';
+@import './hero';
 @import './mobile-menu';
 @import './about';
-@import './header';
 @import './footer';
-

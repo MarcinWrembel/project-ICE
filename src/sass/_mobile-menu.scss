@@ -9,6 +9,10 @@
   // transform: translateX(100%);
   // transition: transform 250ms ease-in-out;
 
+&__icon {
+ stroke: #ffffff;
+}
+
   &__flex {
     display: flex;
     position: relative;
@@ -16,7 +20,6 @@
 
   &__close {
     position: absolute;
-    fill: #ffffff;
     background-color: #e17992;
     border-radius: 50%;
     border-style: none;

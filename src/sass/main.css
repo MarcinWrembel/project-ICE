@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
 body {
   font-family: "DM sans", sans-serif;
 }
@@ -9,39 +13,88 @@ img {
   height: auto;
 }
 
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+.mobile-menu {
+  background-color: #e17992;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
-
-.example code {
-  font-family: monospace;
+.mobile-menu__icon {
+  stroke: #ffffff;
+}
+.mobile-menu__close {
+  position: absolute;
+  background-color: #e17992;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 23px;
+  right: 28px;
+  height: 30px;
+}
+.mobile-menu__buy {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  width: 186px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border-style: none;
+  color: #d41443;
   font-size: 16px;
   font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 19px;
+  margin-top: 60px;
+}
+.mobile-menu__buy-icon {
+  width: 5.26px;
+  height: 8px;
+  border: 2px solid #d41443;
+  border-style: none;
+  fill: #d41443;
+}
+.mobile-menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 32px;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus, .mobile-menu__link--active {
+  color: #d41443;
+}
+.mobile-menu__menu {
+  padding-left: 0px;
+  margin-top: 0px;
+  list-style-type: none;
+}
+.mobile-menu__item {
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e18298;
+}
+.mobile-menu__item:first-child {
+  border-top: 1px solid #e18298;
+  padding-top: 12px;
 }
 
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+.is-open {
+  transform: translateX(0);
 }
 
 .contacts {
@@ -210,4 +263,5 @@ img {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
 }/*# sourceMappingURL=main.css.map */

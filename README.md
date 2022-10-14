@@ -22,6 +22,8 @@ npm run dev
 
 W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
 
+do scripts w package.json można też dorzuć "watch": "parcel watch src/*.html" ,
+
 ### Deploy
 
 Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu 

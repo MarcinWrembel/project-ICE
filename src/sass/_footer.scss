@@ -1,0 +1,118 @@
+.footer {
+    background-color: #FFF5F6;
+    min-width: 320px;
+
+    &__heading {
+        margin: 0 auto;
+        color: #FFA5BA;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        font-family: "Titan One";
+        font-size: 18px;
+        line-height: 1.145;
+        padding: 0 66px 0 22px;
+
+        &--color {
+            color: #D41443;
+            padding: 17px 100px 0 0;
+            font-family: "Titan One";
+            font-size: 34px;
+        }
+    }
+}
+
+
+.footer__link {
+
+    &:nth-child(3) {
+        margin-right: 20px;
+    }
+
+}
+
+.footer__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FEA5BB;
+    fill: #FFFFFF;
+    transition: 0.2s;
+
+    &:hover,
+    &:focus {
+        background-color: #D41443;
+    }
+}
+
+.link {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 13px;
+
+    &__address--phone {
+        color: #D41443;
+
+
+    }
+}
+
+.footer__list {
+    display: flex;
+    justify-content: right;
+    gap: 28px;
+    margin-top: 43px;
+
+}
+
+.footer__address {
+    margin-top: 60px;
+    font-style: normal;
+    padding-bottom: 40px;
+
+
+}
+
+.address__container {
+    border-top: 1px solid #E1E1E1;
+
+}
+
+.footer__paragraph {
+    margin: 0 auto;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 13px;
+    color: #907E82;
+    text-align: center;
+
+
+    &--position {
+        padding-top: 20px;
+        margin-bottom: 15px;
+
+        &-two {
+            padding-bottom: 25px;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer__heading {
+        display: inline-block;
+    }
+
+    .address__container {
+        text-align: right;
+        margin-right: 25px;
+    }
+
+    .footer__container {
+        align-items: baseline;
+    }
+}

@@ -1,0 +1,145 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #ffb8ca;
+  position: relative;
+
+  &__div {
+    display: flex;
+    padding: 6px 20px 0 20px;
+  }
+
+  &__logo-link {
+    cursor: pointer;
+  }
+
+  &__nav-list {
+    display: none;
+  }
+
+  &__menu-toggle {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    stroke: #d41443;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+
+  &__button {
+    display: none;
+  }
+}
+
+//tablet
+@media (min-width: 768px) {
+  .header {
+    &__div {
+      padding: 37px 34px 0 34px;
+    }
+
+    &__menu-toggle {
+      top: 52px;
+      right: 224px;
+    }
+
+    &__button {
+      display: block;
+      margin-left: auto;
+      width: 160px;
+      height: 44px;
+      border-radius: 22px;
+      border: none;
+      background: #ffffff;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+      text-align: center;
+      color: #d41443;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background: #ecebeb;
+      }
+    }
+  }
+}
+
+//desktop
+@media (min-width: 1200px) {
+  .header {
+    &__div {
+      padding: 37px 115px 0 46px;
+    }
+
+    &__navigation {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+
+    &__nav-list {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    &__nav-link {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+      cursor: pointer;
+
+      &--active {
+        color: #d41443;
+
+        &:visited {
+          color: #d41443;
+        }
+      }
+
+      &--notactive {
+        color: #ffffff;
+
+        &:visited {
+          color: #ffffff;
+        }
+
+        &:hover,
+        &:focus {
+          color: #d41443;
+        }
+      }
+    }
+
+    &__nav-link {
+      text-decoration: none;
+    }
+
+    &__menu-toggle {
+      display: none;
+    }
+
+    &__button {
+      margin-left: 0;
+    }
+  }
+}

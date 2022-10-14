@@ -1,22 +1,19 @@
 .mobile-menu {
   background-color: #e17992;
-//   position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
   z-index: 999;
-  // transform: translateX(100%);
-  // transition: transform 250ms ease-in-out;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
 
 &__icon {
  stroke: #ffffff;
 }
-
-  &__flex {
-    display: flex;
-    position: relative;
-  }
 
   &__close {
     position: absolute;
@@ -90,6 +87,10 @@
     border-top: 1px solid #e18298;
     padding-top: 12px;
   }
+}
+
+.is-open {
+    transform: translateX(0);
 }
 // @media screen and (min-width: 768px) {
 // .mobile-menu {

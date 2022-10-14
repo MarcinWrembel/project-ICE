@@ -14,6 +14,7 @@ ul {
 .hero {
   background: #ffb8ca;
   position: relative;
+  z-index: -2;
 
   &__div {
     padding: 137px 20px 160px 20px;
@@ -92,6 +93,15 @@ ul {
     display: none;
   }
 
+  &__circle-pink {
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    left: 36px;
+    bottom: 75px;
+    z-index: -1;
+  }
+
   &__milk-jug {
     position: absolute;
     display: none;
@@ -155,6 +165,13 @@ ul {
       width: 18px;
       height: 18px;
       cursor: pointer;
+    }
+
+    &__circle-pink {
+      width: 324px;
+      height: 322px;
+      left: 307px;
+      bottom: 46px;
     }
 
     &__milk-jug {
@@ -239,6 +256,13 @@ ul {
       margin-left: 249px;
       width: 26px;
       height: 26px;
+    }
+
+    &__circle-pink {
+      width: 538px;
+      height: 538px;
+      left: 475px;
+      bottom: 75px;
     }
 
     &__milk-jug {

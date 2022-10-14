@@ -3,8 +3,6 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Titan+One&display=swap");
 body {
   font-family: "DM sans", sans-serif;
 }
@@ -317,6 +315,50 @@ img {
   margin: 0 auto;
 }
 
+.gallery__tittle {
+  display: none;
+}
+
+.gallery {
+  background-image: url("/images/gallery.png");
+  width: 364px;
+  height: 122px;
+  background-size: 100%;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("./images/gallery@2x.png");
+  }
+}
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  .gallery {
+    width: 786px;
+    height: 264px;
+    background-size: 100%;
+    background-image: url("./images/gallery.png");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("./images/gallery@3x.png");
+  }
+}
+/*DESKTOP*/
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background-size: 100%;
+    background-image: url("./images/gallery.png");
+    width: 1280px;
+    height: 430px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("./images/gallery@4x.png");
+  }
+
 .button__nav {
   font-family: "DM Sans";
   font-size: 16px;
@@ -430,4 +472,5 @@ img {
 }
 .button__contacts-two:hover {
   background-color: #ecebeb;
+
 }/*# sourceMappingURL=main.css.map */

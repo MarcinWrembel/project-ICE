@@ -79,7 +79,7 @@ img {
   width: 130px;
   background: #c2e297;
 }
-.contacts__locations {
+.contacts__heading {
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
@@ -99,4 +99,26 @@ img {
   padding-top: 25px;
   padding-bottom: 25px;
   list-style: none;
+}
+.contacts__open-days {
+  font-size: 12px;
+  line-height: 1.83;
+  color: #000000;
+}
+.contacts__item li:first-child {
+  margin-bottom: 10px;
+}
+.contacts__open-hour {
+  font-size: 12px;
+  line-height: 1.83;
+  color: #ffa5ba;
+}
+.contacts__links {
+  list-style: none;
+}
+.contacts__links a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
 }/*# sourceMappingURL=main.css.map */

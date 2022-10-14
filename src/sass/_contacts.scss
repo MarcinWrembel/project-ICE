@@ -38,7 +38,7 @@
       background: #c2e297;
     }
   }
-  &__locations {
+  &__heading {
     font-size: 12px;
     line-height: 1.83;
     letter-spacing: 0.04em;
@@ -60,5 +60,27 @@
     list-style: none;
   }
   &__open-days {
+    font-size: 12px;
+    line-height: 1.83;
+    color: #000000;
+  }
+  &__item li {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+  &__open-hour {
+    font-size: 12px;
+    line-height: 1.83;
+    color: #ffa5ba;
+  }
+  &__links {
+    list-style: none;
+    & a {
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #907e82;
+    }
   }
 }

@@ -97,380 +97,171 @@ img {
   transform: translateX(0);
 }
 
-@media screen and (min-width: 1200px) {
-  .mobile-menu {
-    display: none;
-  }
+.contacts {
+  background: linear-gradient(180deg, #ffffff 85px, #fff5f6 85px);
+  width: 100%;
+  justify-content: center;
 }
-.about {
-  text-align: center;
-  background-color: rgb(255, 245, 246);
-  font-family: "Titan One", cursive;
+.contacts__card {
+  width: 220px;
+  height: 427px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 43px;
+  padding-left: 20px;
 }
-.about__container {
-  max-width: 767px;
-  margin: 0;
-  padding: 0 20px;
-}
-.about h3 {
-  padding-top: 125px;
-  color: rgb(255, 165, 186);
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.about h2 {
-  color: rgb(212, 20, 67);
-  font-size: 34px;
-  text-transform: uppercase;
-}
-.about__text {
-  font-family: "DM Sans", sans-serif;
-  color: rgb(144, 126, 130);
+.contacts__label {
+  width: 80px;
+  height: 16px;
+  background: #f0d1a5;
+  border-radius: 4px;
   font-size: 12px;
+  line-height: 1.83;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.contacts__label--color {
+  width: 130px;
+  background: #c2e297;
+}
+.contacts__heading {
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.contacts__text {
   font-weight: 500;
+  width: 179px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
 }
-.about__text--color {
-  color: rgb(0, 0, 0);
-}
-.about__text li {
+.contacts__border {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 25px 20px 25px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
   list-style: none;
 }
-
-.header {
-  background: #ffb8ca;
-  position: relative;
-  min-width: 320px;
+.contacts__open-days {
+  font-size: 12px;
+  line-height: 1.83;
+  color: #000000;
 }
-.header__div {
-  padding: 6px 20px;
+.contacts__item li:first-child {
+  margin-bottom: 10px;
 }
-.header__block {
-  display: flex;
-  align-items: center;
-  margin-bottom: 137px;
+.contacts__open-hour {
+  font-size: 12px;
+  line-height: 1.83;
+  color: #ffa5ba;
 }
-.header__logo {
-  min-width: 199px;
-  height: 50px;
+.contacts__links {
+  list-style: none;
 }
-.header__logo-link {
-  cursor: pointer;
+.contacts__links a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
 }
-.header__nav-list {
-  display: none;
-}
-.header__menu-toggle {
-  stroke: #d41443;
-}
-.header__button-buy {
-  display: none;
-}
-.header__title {
-  width: 218px;
-  font-family: "Titan One";
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.header__title-span {
-  font-size: 48px;
-  line-height: 0.965;
-  color: #d41443;
-}
-
-.menu-toggle {
-  margin-left: auto;
-  padding: 0;
-  outline: none;
-  background-color: transparent;
-  border: none;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .header__div {
-    padding: 37px 34px 28px 34px;
-  }
-  .header__block {
-    margin-bottom: 15px;
-  }
-  .header__button-buy {
-    display: block;
-    width: 160px;
-    height: 44px;
-    border-radius: 22px;
-    border: none;
-    background: #ffffff;
-    font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    text-align: center;
-    color: #d41443;
-    cursor: pointer;
-  }
-  .header__button-buy:hover, .header__button-buy:focus {
-    background: #ecebeb;
-  }
-  .header__title {
-    width: 162px;
-    font-size: 22px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-  }
-  .header__title-span {
-    font-size: 34px;
-    line-height: 0.905;
-  }
-  .menu-toggle {
-    margin-right: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .header__div {
-    padding: 37px 115px 45px 77px;
-  }
-  .header__block {
-    margin-bottom: 84px;
-  }
-  .header__navigation {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-  }
-  .header__nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 35px;
-  }
-  .header__nav-element {
-    font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    cursor: pointer;
-  }
-  .header__nav-element--active {
-    color: #d41443;
-  }
-  .header__nav-element--active:visited {
-    color: #d41443;
-  }
-  .header__nav-element--notactive {
-    color: #ffffff;
-  }
-  .header__nav-element--notactive:visited {
-    color: #ffffff;
-  }
-  .header__nav-element--notactive:hover, .header__nav-element--notactive:focus {
-    color: #d41443;
-  }
-  .header__nav-link {
-    text-decoration: none;
-  }
-  .header__title {
-    width: 277px;
-    font-size: 38px;
-    line-height: 1.16;
-    letter-spacing: 0.04em;
-    margin-left: 69px;
-  }
-  .header__title-span {
-    font-size: 58px;
-    line-height: 0.905;
-  }
-  .menu-toggle {
-    display: none;
-  }
-}
-.footer {
-  background-color: #FFF5F6;
-  min-width: 320px;
-}
-.footer__heading {
-  color: #FFA5BA;
-  text-transform: uppercase;
+.contacts__btn-container {
   display: flex;
   flex-direction: column;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.145;
-  padding: 0 66px 0 22px;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 54px;
 }
-.footer__heading--color {
-  color: #D41443;
-  line-height: 1.145;
-  padding: 17px 100px 0 0;
-}
-
-.footer__list {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0 auto;
-}
-
-.gallery__tittle {
-  display: none;
-}
-
-.gallery {
-  background-image: url("/images/gallery.png");
-  width: 364px;
-  height: 122px;
-  background-size: 100%;
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .gallery {
-    background-image: url("./images/gallery@2x.png");
-  }
-}
-/*TABLET*/
-@media screen and (min-width: 768px) {
-  .gallery {
-    width: 786px;
-    height: 264px;
-    background-size: 100%;
-    background-image: url("./images/gallery.png");
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .gallery {
-    background-image: url("./images/gallery@3x.png");
-  }
-}
-/*DESKTOP*/
-@media screen and (min-width: 1200px) {
-  .gallery {
-    background-size: 100%;
-    background-image: url("./images/gallery.png");
-    width: 1280px;
-    height: 430px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .gallery {
-    background-image: url("./images/gallery@4x.png");
-  }
-
-.button__nav {
-  font-family: "DM Sans";
-  font-size: 16px;
-  line-height: 1.31;
-  width: 159px;
+.contacts__btn-locations {
+  width: 161.45px;
   height: 44px;
-  text-align: center;
-  color: #d41443;
-  border-style: none;
-  background: #ffffff;
-  border-radius: 22px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button__nav:hover {
-  color: rgb(212, 20, 67);
-  background: #ecebeb;
-  border-style: none;
-}
-
-.button__header-one {
-  font-family: "DM Sans";
-  font-size: 14px;
-  line-height: 1.28;
-  width: 104px;
-  height: 40px;
-  text-align: center;
-  color: white;
-  border-style: none;
-  background: #d41443;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.button__header-one:hover {
-  background: #c7133e;
-  color: #ffffff;
-}
-
-.button__header-two {
-  font-family: "DM Sans";
-  line-height: 1.28;
-  font-size: 14px;
-  width: 138px;
-  height: 40px;
-  text-align: center;
-  color: rgb(212, 20, 67);
-  border-style: none;
-  background: #ffffff;
-  border-radius: 20px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button__header-two:hover {
-  background-color: #ecebeb;
-}
-
-.button__about {
-  font-family: "DM Sans";
-  font-size: 16px;
-  line-height: 1.31;
-  width: 176px;
-  height: 44px;
-  text-align: center;
-  color: rgb(212, 20, 67);
-  border-style: none;
-  background: #ffffff;
-  border-radius: 22px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button__about:hover {
-  background-color: #ecebeb;
-}
-
-.button__contacts-one {
-  font-family: "DM Sans";
-  font-size: 16px;
-  line-height: 1.31;
-  width: 198px;
-  height: 44px;
-  text-align: center;
-  color: #ffffff;
-  border-style: none;
   background: #d41342;
   border-radius: 22px;
-  cursor: pointer;
-}
-
-.button__contacts-two {
-  font-family: "DM Sans";
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  width: 180px;
-  height: 44px;
-  line-height: 21px;
-  text-align: center;
-  color: #d41443;
-  border-style: none;
-  background: #ffffff;
-  border-radius: 22px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: transparent;
+  margin: 0 auto;
 }
-.button__contacts-two:hover {
-  background-color: #ecebeb;
+.contacts__btn-franchise {
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  background: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d41443;
+  border: transparent;
+  margin: 0 auto;
+}
+.contacts__btn-franchise:hover, .contacts__btn-franchise:focus {
+  background: #ecebeb;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    background: linear-gradient(180deg, #ffffff 78px, #fff5f6 78px);
+  }
+  .contacts__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+  .contacts__card {
+    margin: 0;
+    flex-basis: calc((100% - 40px) / 3);
+    height: 544px;
+    padding-left: 31px;
+    padding-top: 50px;
+    margin-bottom: 81px;
+  }
+  .contacts__label {
+    width: 73px;
+    height: 28px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+  .contacts__label--color {
+    width: 138px;
+    background: #c2e297;
+  }
+  .contacts__heading {
+    font-size: 14px;
+    line-height: 1.88;
+    margin-bottom: 14px;
+  }
+  .contacts__text {
+    font-size: 14px;
+    line-height: 1.64;
+    padding-right: 38px;
+  }
+  .contacts__border {
+    margin: 30px 32px 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
 }/*# sourceMappingURL=main.css.map */

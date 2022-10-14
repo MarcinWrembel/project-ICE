@@ -3,8 +3,6 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Titan+One&display=swap");
 body {
   font-family: "DM sans", sans-serif;
 }
@@ -330,7 +328,7 @@ img {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .gallery {
-    background-image: url("/images/gallery@2x.png");
+    background-image: url("./images/gallery@2x.png");
   }
 }
 /*TABLET*/
@@ -339,25 +337,140 @@ img {
     width: 786px;
     height: 264px;
     background-size: 100%;
-    background-image: url("/images/gallery.png");
+    background-image: url("./images/gallery.png");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .gallery {
-    background-image: url("/images/gallery@3x.png");
+    background-image: url("./images/gallery@3x.png");
   }
 }
 /*DESKTOP*/
 @media screen and (min-width: 1200px) {
   .gallery {
     background-size: 100%;
-    background-image: url("/images/gallery.png");
+    background-image: url("./images/gallery.png");
     width: 1280px;
     height: 430px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .gallery {
-    background-image: url("/images/gallery@4x.png");
+    background-image: url("./images/gallery@4x.png");
   }
+
+.button__nav {
+  font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 1.31;
+  width: 159px;
+  height: 44px;
+  text-align: center;
+  color: #d41443;
+  border-style: none;
+  background: #ffffff;
+  border-radius: 22px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__nav:hover {
+  color: rgb(212, 20, 67);
+  background: #ecebeb;
+  border-style: none;
+}
+
+.button__header-one {
+  font-family: "DM Sans";
+  font-size: 14px;
+  line-height: 1.28;
+  width: 104px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  border-style: none;
+  background: #d41443;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.button__header-one:hover {
+  background: #c7133e;
+  color: #ffffff;
+}
+
+.button__header-two {
+  font-family: "DM Sans";
+  line-height: 1.28;
+  font-size: 14px;
+  width: 138px;
+  height: 40px;
+  text-align: center;
+  color: rgb(212, 20, 67);
+  border-style: none;
+  background: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__header-two:hover {
+  background-color: #ecebeb;
+}
+
+.button__about {
+  font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 1.31;
+  width: 176px;
+  height: 44px;
+  text-align: center;
+  color: rgb(212, 20, 67);
+  border-style: none;
+  background: #ffffff;
+  border-radius: 22px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__about:hover {
+  background-color: #ecebeb;
+}
+
+.button__contacts-one {
+  font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 1.31;
+  width: 198px;
+  height: 44px;
+  text-align: center;
+  color: #ffffff;
+  border-style: none;
+  background: #d41342;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.button__contacts-two {
+  font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 1.31;
+  width: 180px;
+  height: 44px;
+  line-height: 21px;
+  text-align: center;
+  color: #d41443;
+  border-style: none;
+  background: #ffffff;
+  border-radius: 22px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__contacts-two:hover {
+  background-color: #ecebeb;
+
 }/*# sourceMappingURL=main.css.map */

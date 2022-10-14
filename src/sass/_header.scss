@@ -1,6 +1,7 @@
 .header {
   background: #ffb8ca;
   position: relative;
+  min-width: 320px;
 
   &__div {
     padding: 6px 20px;
@@ -8,7 +9,13 @@
 
   &__block {
     display: flex;
+    align-items: center;
     margin-bottom: 137px;
+  }
+
+  &__logo {
+    min-width: 199px;
+    height: 50px;
   }
 
   &__logo-link {
@@ -20,9 +27,7 @@
   }
 
   &__menu-toggle {
-    position: absolute;
-    top: 25px;
-    left: 20px;
+    stroke: #d41443;
   }
 
   &__button-buy {
@@ -32,8 +37,6 @@
   &__title {
     width: 218px;
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -46,6 +49,18 @@
     line-height: 0.965;
     color: #d41443;
   }
+}
+
+.menu-toggle {
+  margin-left: auto;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
 }
 
 //tablet
@@ -61,14 +76,12 @@
 
     &__button-buy {
       display: block;
-      margin-left: auto;
       width: 160px;
       height: 44px;
       border-radius: 22px;
       border: none;
       background: #ffffff;
       font-family: 'DM Sans';
-      font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.31;
@@ -93,6 +106,9 @@
       font-size: 34px;
       line-height: 0.905;
     }
+  }
+  .menu-toggle {
+    margin-right: 30px;
   }
 }
 
@@ -121,7 +137,6 @@
 
     &__nav-element {
       font-family: 'DM Sans';
-      font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.31;
@@ -165,5 +180,9 @@
       font-size: 58px;
       line-height: 0.905;
     }
+  }
+
+  .menu-toggle {
+    display: none;
   }
 }

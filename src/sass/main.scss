@@ -4,9 +4,11 @@
  */
 
 @use './general';
+@import './header';
+@import './hero';
 @import './mobile-menu';
 @import './about';
-@import './header';
 @import './footer';
 @import './gallery';
 @import './buttons';
+

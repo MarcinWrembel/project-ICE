@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contacts {
+  background: linear-gradient(180deg, #ffffff 85px, #fff5f6 85px);
+  width: 100%;
+  justify-content: center;
+
+  &__card {
+    width: 220px;
+    height: 427px;
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-top: 43px;
+    padding-left: 20px;
+  }
+  &__label {
+    width: 80px;
+    height: 16px;
+    background: #f0d1a5;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin-bottom: 25px;
+
+    &--color {
+      width: 130px;
+      background: #c2e297;
+    }
+  }
+  &__locations {
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  &__text {
+    width: 179px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907e82;
+  }
+  &__border {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 25px 20px 25px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    list-style: none;
+  }
+  &__open-days {
+  }
+}

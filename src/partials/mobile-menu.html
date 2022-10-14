@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icecream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="../sass/main.css" />
+  </head>
+  <body>
+<div class="mobile-menu js-menu-container">
+<div class="mobile-menu__flex">
+    <button class="mobile-menu__close js-close-menu">
+    <svg width="14" height="14">
+      <use href="/src/images/icons.svg#icon-mobileMenuClose"></use>
+    </svg>
+<button class="mobile-menu__buy">
+      Buy now <svg class="mobile-menu__buy-icon" width="5" height="8">
+        <use href="/images/icons.svg#icon-ButtonArrowRight"></use>
+      </svg>
+    </button>
+    </div>
+    <ul class="mobile-menu__menu">
+      <li class="mobile-menu__item">
+        <a href="#Home" class="mobile-menu__link mobile-menu__link--active ">Home</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#About us" class="mobile-menu__link ">About us</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#How it’s made?" class="mobile-menu__link">How it’s made?</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#Our products" class="mobile-menu__link">Our products</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#Contact" class="mobile-menu__link">Contact</a>
+      </li>
+    </ul>
+</div>
+  </body>
+  </html>
+
+<script src="./js/mobile-menu.js"></script>

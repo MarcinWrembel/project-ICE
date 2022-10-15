@@ -20,6 +20,10 @@ ul {
     padding: 6px 20px 0 20px;
   }
 
+  &__navigation {
+    z-index: 2;
+  }
+
   &__logo-link {
     cursor: pointer;
   }

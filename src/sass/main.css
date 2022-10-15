@@ -519,12 +519,14 @@ ul {
     align-items: baseline;
   }
 }
+
 .advantages {
   display: none;
 }
 .advantages__list {
   list-style-type: none;
   display: flex;
+
 }
 .advantages__item {
   font-family: "Titan One";
@@ -533,22 +535,80 @@ ul {
   font-size: 58px;
   line-height: 1.13;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding-top: 50px;
 }
 .advantages__item::before {
   content: "";
+  max-width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+}
+.advantages__item--tribe::before {
+  background-image: url("/images/advantages_tribe.png");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item--tribe::before {
+    background-image: url("/images/advantages_tribe@2x.png");
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .advantages__item--tribe::before {
+    background-image: url("/images/advantages_tribe@3x.png");
+  }
+}
+.advantages__item--apples::before {
+  background-image: url("/images/advantages_apples.png");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item--apples::before {
+    background-image: url("/images/advantages_apples@2x.png");
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .advantages__item--apples::before {
+    background-image: url("/images/advantages_apples@3x.png");
+  }
+}
+.advantages__item--heart::before {
+  background-image: url("/images/advantages_heart.png");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item--heart::before {
+    background-image: url("/images/advantages_heart@2x.png");
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .advantages__item--heart::before {
+    background-image: url("/images/advantages_heart@3x.png");
+  }
 }
 .advantages__description {
+  font-family: "DM Sans";
+  font-weight: 700;
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.02em;
   color: #000000;
+
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
+  .advantages-section {
+    padding: 0px 36px;
+    display: flex;
+    justify-content: center;
+  }
+
   .advantages__list {
     flex-direction: column;
   }
@@ -556,19 +616,45 @@ ul {
     font-size: 48px;
     line-height: 1.14;
   }
+
+  .advantages__item::before {
+    margin-bottom: 36px;
+  }
   .advantages__description {
     font-size: 14px;
     line-height: 1.71;
+    margin-top: 13px;
+  }
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
+  .advantages-section {
+    padding: 0px 115px;
+    display: flex;
+    justify-content: center;
+  }
   .advantages__item {
-    font-size: 36px;
-    line-height: 1.13p;
+    font-size: 58px;
+    line-height: 1.13;
+  }
+  .advantages__item::before {
+    margin-bottom: 40px;
   }
   .advantages__description {
-    font-size: 12px;
-    line-height: 1.66;
+    font-size: 16px;
+    line-height: 1.76;
+    margin-top: 15px;
+  }
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .advantages__flex {
+    display: flex;
+
   }
 }
 .gallery__tittle {
@@ -576,10 +662,11 @@ ul {
 }
 
 .gallery {
-  background-image: url("/images/gallery@4x.png");
+
+  background-image: url("/images/gallery.png");
   width: 364px;
   height: 122px;
-  width: 100%;
+
   background-size: 100%;
 }
 
@@ -594,9 +681,9 @@ ul {
     width: 786px;
     height: 264px;
     background-size: 100%;
-    background-image: url("/images/gallery@4x.png");
-    width: 100%;
-    background-repeat: no-repeat;
+
+    background-image: url("/images/gallery.png");
+
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -608,14 +695,19 @@ ul {
 @media screen and (min-width: 1200px) {
   .gallery {
     background-size: 100%;
-    background-image: url("/images/gallery@4x.png");
-    background-repeat: no-repeat;
-    width: 100%;
+
+    background-image: url("/images/gallery.png");
+    width: 1280px;
+    height: 430px;
+
+
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .gallery {
-    background-image: url("/images/gallery_desktop@x2.png");
+
+    background-image: url("/images/gallery@4x.png");
+
   }
 }
 .button__nav {
@@ -630,7 +722,9 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  transition-property: color, background-color;
+
+  transition-property: background-color;
+
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -652,9 +746,10 @@ ul {
   background: #d41443;
   border-radius: 20px;
   cursor: pointer;
+
   transition-property: color, background-color;
   transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .button__header-one:hover {
   background: #c7133e;
@@ -673,7 +768,9 @@ ul {
   background: #ffffff;
   border-radius: 20px;
   cursor: pointer;
-  transition-property: color, background-color;
+
+  transition-property: background-color;
+
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -693,7 +790,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  transition-property: color, background-color;
+
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -728,7 +825,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  transition-property: color, background-color;
+
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

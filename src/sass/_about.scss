@@ -5,9 +5,6 @@
     min-width: 320px;
     text-align: center;
     background-color: rgba(255, 245, 246, 1);
-    // background-image:
-    // url(../images/a_background.png);
-    // background-repeat: no-repeat;
 
     &__container {
         max-width: 767px;
@@ -24,7 +21,6 @@
     text-transform: uppercase;
     font-family: 'Titan One', cursive;
     
-
     &--secondary {
       padding-top: 125px;
       padding-bottom: 15px;
@@ -92,5 +88,55 @@
             background-color: rgba(236, 235, 235, 1);
             outline: none;
         }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .about {
+        min-width: 768px;
+
+        &__container {
+            max-width: 1200px;
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__title {
+            width: 100%;
+            font-size: 48px;
+            padding-bottom: 0;
+                       
+            
+            &--secondary {
+              font-size: 26px;
+              width: 100%;
+            }
+    }
+
+    &__text {
+        margin-left: 0;
+        width: 340px;
+        font-size: 14px;
+        padding-top: 90px;
+        line-height: 24.64px;
+    }
+
+    &__picture {
+        width: 340px;
+        height: 339px;
+        margin-right: 17px;
+        margin-left: 14px;
+    }
+
+    &__btn {
+        display: flex;
+        width: 176px;
+        margin-top: 42px;
+    }
+    
+    &__tablet {
+        width: 340px;
+    }
     }
 }

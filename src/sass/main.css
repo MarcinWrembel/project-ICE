@@ -469,6 +469,48 @@ ul {
   outline: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about {
+    min-width: 768px;
+  }
+  .about__container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about__title {
+    width: 100%;
+    font-size: 48px;
+    padding-bottom: 0;
+  }
+  .about__title--secondary {
+    font-size: 26px;
+    width: 100%;
+  }
+  .about__text {
+    margin-left: 0;
+    width: 340px;
+    font-size: 14px;
+    padding-top: 90px;
+    line-height: 24.64px;
+  }
+  .about__picture {
+    width: 340px;
+    height: 339px;
+    margin-right: 17px;
+    margin-left: 14px;
+  }
+  .about__btn {
+    display: flex;
+    width: 176px;
+    margin-top: 42px;
+  }
+  .about__tablet {
+    width: 340px;
+  }
+}
 .footer {
   background-color: #FFF5F6;
   min-width: 320px;

@@ -49,6 +49,10 @@ ul {
     gap: 8px;
   }
 
+  &__button-link {
+    text-decoration: none;
+  }
+
   &__button {
     display: flex;
     flex-direction: row;
@@ -69,6 +73,10 @@ ul {
       color: #ffffff;
       width: 62.4px;
 
+      &:visited {
+        color: #ffffff;
+      }
+
       &:hover,
       &:focus {
         background: #c7133e;
@@ -79,6 +87,10 @@ ul {
       background: #ffffff;
       color: #d41443;
       width: 82.8px;
+
+      &:visited {
+        color: #d41443;
+      }
 
       &:hover,
       &:focus {

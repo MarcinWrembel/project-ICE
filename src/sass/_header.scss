@@ -18,6 +18,11 @@ ul {
   &__div {
     display: flex;
     padding: 6px 20px 0 20px;
+    min-width: 320px;
+  }
+
+  &__navigation {
+    z-index: 4;
   }
 
   &__logo-link {

@@ -17,10 +17,13 @@ ul {
 
   &__div {
     padding: 137px 20px 160px 20px;
+    min-width: 320px;
   }
 
   &__title-div {
     width: 218px;
+    position: relative;
+    z-index: 3;
   }
 
   &__title {
@@ -91,6 +94,32 @@ ul {
   &__arrow {
     display: none;
   }
+
+  &__circle-pink {
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    left: 36px;
+    bottom: 75px;
+  }
+
+  &__milk-jug {
+    position: absolute;
+    display: none;
+  }
+
+  &__icecream {
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    bottom: 0;
+    left: 117px;
+  }
+
+  &__icecream-eat {
+    position: absolute;
+    display: none;
+  }
 }
 
 //tablet
@@ -137,6 +166,36 @@ ul {
       width: 18px;
       height: 18px;
       cursor: pointer;
+    }
+
+    &__circle-pink {
+      width: 324px;
+      height: 322px;
+      left: 307px;
+      bottom: 46px;
+    }
+
+    &__milk-jug {
+      display: block;
+      width: 124px;
+      height: 126px;
+      bottom: 28px;
+      left: 34px;
+    }
+
+    &__icecream {
+      width: 143px;
+      height: 336px;
+      left: 378px;
+      bottom: 0;
+    }
+
+    &__icecream-eat {
+      display: block;
+      width: 168px;
+      height: 133px;
+      right: 34px;
+      bottom: 0;
     }
   }
 }
@@ -198,6 +257,34 @@ ul {
       margin-left: 249px;
       width: 26px;
       height: 26px;
+    }
+
+    &__circle-pink {
+      width: 538px;
+      height: 538px;
+      left: 475px;
+      bottom: 75px;
+    }
+
+    &__milk-jug {
+      width: 188px;
+      height: 191px;
+      bottom: 45px;
+      left: 77px;
+    }
+
+    &__icecream {
+      width: 236px;
+      height: 557px;
+      left: 594px;
+      bottom: 0;
+    }
+
+    &__icecream-eat {
+      width: 293px;
+      height: 232px;
+      right: 109px;
+      bottom: 0;
     }
   }
 }

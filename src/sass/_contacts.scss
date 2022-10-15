@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 .contacts {
   background: linear-gradient(180deg, #ffffff 85px, #fff5f6 85px);
   width: 100%;
@@ -47,10 +43,10 @@
   }
   &__text {
     font-weight: 500;
-    width: 179px;
     font-size: 12px;
     line-height: 1.5;
     color: #907e82;
+    margin-right: 20px;
   }
   &__border {
     border-top: 1px solid #e1e1e1;
@@ -82,6 +78,7 @@
       font-size: 12px;
       line-height: 1.5;
       color: #907e82;
+      cursor: pointer;
     }
   }
   &__btn-container {
@@ -131,6 +128,12 @@
     &:hover {
       background: #ecebeb;
     }
+    &__icon {
+      fill: none;
+      stroke: #ffffff;
+      width: 3.61px;
+      height: 8px;
+    }
   }
 }
 
@@ -175,7 +178,7 @@
     &__text {
       font-size: 14px;
       line-height: 1.64;
-      padding-right: 38px;
+      margin-right: 44px;
     }
     &__border {
       margin: 30px 32px 30px 0;
@@ -245,53 +248,47 @@
       font-size: 16px;
       margin-bottom: 10px;
     }
-  &__text {
+    &__text {
       font-size: 16px;
       line-height: 1.81;
       padding-right: 0;
       margin: 0;
-    }}
+    }
+    &__border {
+      margin: 32px 53px 32px 0;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    &__open-days {
+      font-size: 16px;
+      line-height: 1.15;
+    }
+    &__item li {
+      &:first-child {
+        margin-bottom: 15px;
+      }
+    }
+    &__open-hour {
+      font-size: 16px;
+      line-height: 1.15;
+    }
+    &__links {
+      & a {
+        font-size: 16px;
+        line-height: 1.81;
+      }
+    }
+    &__btn-container {
+      gap: 15px;
+      margin-top: 0;
+    }
+    &__btn-locations {
+      width: 198px;
+      margin: 0;
+    }
+    &__btn-franchise {
+      width: 180px;
+      margin: 0;
+    }
+  }
 }
-
-//     
-//     &__border {
-//       margin: 30px 32px 30px 0;
-//       padding-top: 30px;
-//       padding-bottom: 30px;
-//     }
-//     &__open-days {
-//       font-size: 14px;
-//       line-height: 1.86;
-//     }
-//     &__item li {
-//       &:first-child {
-//         margin-bottom: 16px;
-//       }
-//     }
-//     &__open-hour {
-//       font-size: 14px;
-//       line-height: 1.86;
-//     }
-//     &__links {
-//       & a {
-//         font-size: 14px;
-//         line-height: 1.86;
-//       }
-//     }
-
-//     &__btn-container {
-//       display: flex;
-//       flex-direction: row;
-//       gap: 14.5px;
-//       justify-content: center;
-//       margin-top: 0;
-
-//     }
-//     &__btn-locations {
-//       width: 191.45px;
-//       margin: 0;
-//     }
-//     &__btn-franchise {
-//       width: 174.05px;margin: 0;
-//     }
-//   }

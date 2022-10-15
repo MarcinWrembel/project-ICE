@@ -730,11 +730,6 @@ ul {
   background-color: #ecebeb;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .contacts {
   background: linear-gradient(180deg, #ffffff 85px, #fff5f6 85px);
   width: 100%;
@@ -779,10 +774,10 @@ ul {
 }
 .contacts__text {
   font-weight: 500;
-  width: 179px;
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+  margin-right: 20px;
 }
 .contacts__border {
   border-top: 1px solid #e1e1e1;
@@ -813,6 +808,7 @@ ul {
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+  cursor: pointer;
 }
 .contacts__btn-container {
   display: flex;
@@ -861,6 +857,12 @@ ul {
 .contacts__btn-franchise:hover {
   background: #ecebeb;
 }
+.contacts__btn-franchise__icon {
+  fill: none;
+  stroke: #ffffff;
+  width: 3.61px;
+  height: 8px;
+}
 
 @media screen and (min-width: 768px) {
   .contacts {
@@ -901,7 +903,7 @@ ul {
   .contacts__text {
     font-size: 14px;
     line-height: 1.64;
-    padding-right: 38px;
+    margin-right: 44px;
   }
   .contacts__border {
     margin: 30px 32px 30px 0;
@@ -969,6 +971,38 @@ ul {
     font-size: 16px;
     line-height: 1.81;
     padding-right: 0;
+    margin: 0;
+  }
+  .contacts__border {
+    margin: 32px 53px 32px 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts__open-days {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+  .contacts__item li:first-child {
+    margin-bottom: 15px;
+  }
+  .contacts__open-hour {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+  .contacts__links a {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+  .contacts__btn-container {
+    gap: 15px;
+    margin-top: 0;
+  }
+  .contacts__btn-locations {
+    width: 198px;
+    margin: 0;
+  }
+  .contacts__btn-franchise {
+    width: 180px;
     margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */

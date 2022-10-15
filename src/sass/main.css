@@ -519,12 +519,6 @@ ul {
     align-items: baseline;
   }
 }
-.advantages-section {
-  min-width: 320px;
-  padding: 0 20px;
-  width: 100%;
-  background-color: #fff5f6;
-}
 
 .advantages {
   display: none;
@@ -532,7 +526,7 @@ ul {
 .advantages__list {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+
 }
 .advantages__item {
   font-family: "Titan One";
@@ -597,12 +591,14 @@ ul {
 .advantages__description {
   font-family: "DM Sans";
   font-weight: 700;
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.02em;
   color: #000000;
+
   flex-direction: column;
 }
 
@@ -612,6 +608,7 @@ ul {
     display: flex;
     justify-content: center;
   }
+
   .advantages__list {
     flex-direction: column;
   }
@@ -619,6 +616,7 @@ ul {
     font-size: 48px;
     line-height: 1.14;
   }
+
   .advantages__item::before {
     margin-bottom: 36px;
   }
@@ -656,6 +654,7 @@ ul {
   }
   .advantages__flex {
     display: flex;
+
   }
 }
 .gallery__tittle {
@@ -663,9 +662,11 @@ ul {
 }
 
 .gallery {
+
   background-image: url("/images/gallery.png");
   width: 364px;
   height: 122px;
+
   background-size: 100%;
 }
 
@@ -680,7 +681,9 @@ ul {
     width: 786px;
     height: 264px;
     background-size: 100%;
+
     background-image: url("/images/gallery.png");
+
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -692,14 +695,19 @@ ul {
 @media screen and (min-width: 1200px) {
   .gallery {
     background-size: 100%;
+
     background-image: url("/images/gallery.png");
     width: 1280px;
     height: 430px;
+
+
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .gallery {
+
     background-image: url("/images/gallery@4x.png");
+
   }
 }
 .button__nav {
@@ -714,7 +722,9 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
+
   transition-property: background-color;
+
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -736,6 +746,10 @@ ul {
   background: #d41443;
   border-radius: 20px;
   cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 500ms;
+
 }
 .button__header-one:hover {
   background: #c7133e;
@@ -754,7 +768,9 @@ ul {
   background: #ffffff;
   border-radius: 20px;
   cursor: pointer;
+
   transition-property: background-color;
+
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -774,7 +790,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  transition-property: background-color;
+
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -809,7 +825,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  transition-property: background-color;
+
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

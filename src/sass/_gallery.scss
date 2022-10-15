@@ -3,10 +3,10 @@
 }
 
 .gallery {
-  background-image: url('/images/gallery.png');
+  background-image: url('/images/gallery@4x.png');
   width: 364px;
   height: 122px;
-
+  width: 100%;
   background-size: 100%;
 }
 
@@ -23,7 +23,9 @@
     width: 786px;
     height: 264px;
     background-size: 100%;
-    background-image: url('/images/gallery.png');
+    background-image: url('/images/gallery@4x.png');
+    width: 100%;
+    background-repeat: no-repeat;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -38,14 +40,14 @@
 @media screen and (min-width: 1200px) {
   .gallery {
     background-size: 100%;
-    background-image: url('/images/gallery.png');
-    width: 1280px;
-    height: 430px;
+    background-image: url('/images/gallery@4x.png');
+    background-repeat: no-repeat;
+    width: 100%;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .gallery {
-      background-image: url('/images/gallery@4x.png');
+      background-image: url('/images/gallery_desktop@x2.png');
     }
   }
 }

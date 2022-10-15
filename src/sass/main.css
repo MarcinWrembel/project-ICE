@@ -4,7 +4,7 @@
  * Wszystkie partials podłączamy tutaj.
  */
 @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap");
 body {
   font-family: "DM sans", sans-serif;
 }
@@ -430,16 +430,46 @@ ul {
   margin: auto;
   text-align: left;
   padding-bottom: 20px;
+  line-height: 19.44px;
 }
 .about__text--color {
   color: rgb(0, 0, 0);
-  padding-bottom: 47px;
+  padding-bottom: 40px;
 }
 .about__text--break {
   padding-bottom: 12px;
 }
 .about__text li {
   list-style: none;
+}
+.about__btn {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 22px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(212, 20, 67);
+  line-height: 1, 30;
+  padding-left: 37px;
+  cursor: pointer;
+}
+.about__btn--icon {
+  width: 5px;
+  padding-left: 14px;
+  padding-right: 38px;
+  fill: none;
+  stroke: rgb(212, 20, 67);
+}
+.about__background-img {
+  position: absolute;
+  top: 765px;
+  height: 133px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {

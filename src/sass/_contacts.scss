@@ -92,17 +92,21 @@
     margin-top: 54px;
   }
   &__btn-locations {
-    width: 161.45px;
-    height: 44px;
-    background: #d41342;
-    border-radius: 22px;
-    font-weight: 700;
+    font-family: 'DM Sans';
     font-size: 16px;
     line-height: 1.31;
+    width: 161.45px;
+    height: 44px;
+    text-align: center;
+    color: #ffffff;
+    border-style: none;
+    background: #d41342;
+    border-radius: 22px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+
     border: transparent;
     margin: 0 auto;
   }
@@ -118,10 +122,13 @@
     align-items: center;
     justify-content: center;
     color: #d41443;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border: transparent;
     margin: 0 auto;
-    &:hover,
-    &:focus {
+    &:hover {
       background: #ecebeb;
     }
   }
@@ -175,79 +182,116 @@
       padding-top: 30px;
       padding-bottom: 30px;
     }
+    &__open-days {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    &__item li {
+      &:first-child {
+        margin-bottom: 16px;
+      }
+    }
+    &__open-hour {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    &__links {
+      & a {
+        font-size: 14px;
+        line-height: 1.86;
+      }
+    }
+
+    &__btn-container {
+      display: flex;
+      flex-direction: row;
+      gap: 14.5px;
+      justify-content: center;
+      margin-top: 0;
+    }
+    &__btn-locations {
+      width: 191.45px;
+      margin: 0;
+    }
+    &__btn-franchise {
+      width: 174.05px;
+      margin: 0;
+    }
   }
 }
 
-//   }
-//   &__border {
-//     border-top: 1px solid #e1e1e1;
-//     border-bottom: 1px solid #e1e1e1;
-//     margin: 25px 20px 25px 0;
-//     padding-top: 25px;
-//     padding-bottom: 25px;
-//     list-style: none;
-//   }
-//   &__open-days {
-//     font-size: 12px;
-//     line-height: 1.83;
-//     color: #000000;
-//   }
-//   &__item li {
-//     &:first-child {
-//       margin-bottom: 10px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background: linear-gradient(180deg, #ffffff 102px, #fff5f6 102px);
+    &__cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 31px;
+      margin-left: 115px;
+      margin-right: 115px;
+    }
+    &__card {
+      margin: 0;
+      flex-basis: calc((100% - 62px) / 3);
+      height: 572px;
+      padding-left: 44px;
+      padding-top: 51px;
+      margin-bottom: 86px;
+    }
+    &__label {
+      margin-bottom: 32px;
+    }
+    &__heading {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  &__text {
+      font-size: 16px;
+      line-height: 1.81;
+      padding-right: 0;
+      margin: 0;
+    }}
+}
+
+//     
+//     &__border {
+//       margin: 30px 32px 30px 0;
+//       padding-top: 30px;
+//       padding-bottom: 30px;
+//     }
+//     &__open-days {
+//       font-size: 14px;
+//       line-height: 1.86;
+//     }
+//     &__item li {
+//       &:first-child {
+//         margin-bottom: 16px;
+//       }
+//     }
+//     &__open-hour {
+//       font-size: 14px;
+//       line-height: 1.86;
+//     }
+//     &__links {
+//       & a {
+//         font-size: 14px;
+//         line-height: 1.86;
+//       }
+//     }
+
+//     &__btn-container {
+//       display: flex;
+//       flex-direction: row;
+//       gap: 14.5px;
+//       justify-content: center;
+//       margin-top: 0;
+
+//     }
+//     &__btn-locations {
+//       width: 191.45px;
+//       margin: 0;
+//     }
+//     &__btn-franchise {
+//       width: 174.05px;margin: 0;
 //     }
 //   }
-//   &__open-hour {
-//     font-size: 12px;
-//     line-height: 1.83;
-//     color: #ffa5ba;
-//   }
-//   &__links {
-//     list-style: none;
-//     & a {
-//       text-decoration: none;
-//       font-size: 12px;
-//       line-height: 1.5;
-//       color: #907e82;
-//     }
-//   }
-//   &__btn-container {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 10px;
-//     justify-content: center;
-//     margin-top: 54px;
-//   }
-//   &__btn-locations {
-//     width: 161.45px;
-//     height: 44px;
-//     background: #d41342;
-//     border-radius: 22px;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.31;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: #ffffff;
-//     border: transparent;
-//     margin: 0 auto;
-//   }
-//   &__btn-franchise {
-//     width: 161px;
-//     height: 44px;
-//     border-radius: 22px;
-//     background: #ffffff;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.31;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: #d41443;
-//     border: transparent;
-//     margin: 0 auto;
-//     &:hover,
-//     &:focus {
-//       background: #ecebeb;
-//     }

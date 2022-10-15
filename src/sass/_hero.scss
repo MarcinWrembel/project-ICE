@@ -17,10 +17,13 @@ ul {
 
   &__div {
     padding: 137px 20px 160px 20px;
+    min-width: 320px;
   }
 
   &__title-div {
     width: 218px;
+    position: relative;
+    z-index: 3;
   }
 
   &__title {

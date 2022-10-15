@@ -171,6 +171,7 @@ ul {
     &__numbers-div {
       display: flex;
       flex-direction: column;
+      gap: 13px;
       margin-left: auto;
       position: relative;
       z-index: 2;
@@ -312,6 +313,10 @@ ul {
       &--white {
         width: 138px;
       }
+    }
+
+    &__numbers-div {
+      gap: 15px;
     }
 
     &__cafes,

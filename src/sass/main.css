@@ -859,6 +859,7 @@ ul {
 }
 .contacts__btn-franchise__icon {
   fill: none;
+  border: none;
   stroke: #ffffff;
   width: 3.61px;
   height: 8px;

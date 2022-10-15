@@ -1,27 +1,21 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
 
 .header {
   background: #ffb8ca;
   position: relative;
 
-  &__div {
+  &__container {
     display: flex;
     padding: 6px 20px 0 20px;
+    min-width: 320px;
+  }
+
+  &__navigation {
+    z-index: 4;
   }
 
   &__logo-link {
     cursor: pointer;
+    outline: none;
   }
 
   &__nav-list {
@@ -36,17 +30,19 @@ ul {
     cursor: pointer;
     background: transparent;
     border: none;
+    z-index: 2;
   }
 
   &__button {
     display: none;
+    z-index: 2;
   }
 }
 
 //tablet
 @media (min-width: 768px) {
   .header {
-    &__div {
+    &__container {
       padding: 37px 34px 0 34px;
     }
 
@@ -71,6 +67,7 @@ ul {
       text-align: center;
       color: #d41443;
       cursor: pointer;
+      outline: none;
 
       &:hover,
       &:focus {
@@ -83,7 +80,7 @@ ul {
 //desktop
 @media (min-width: 1200px) {
   .header {
-    &__div {
+    &__container {
       padding: 37px 115px 0 46px;
     }
 
@@ -107,6 +104,7 @@ ul {
       font-size: 16px;
       line-height: 1.31;
       cursor: pointer;
+      outline: none;
 
       &--active {
         color: #d41443;

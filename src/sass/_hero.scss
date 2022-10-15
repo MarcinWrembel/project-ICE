@@ -15,12 +15,19 @@ ul {
   background: #ffb8ca;
   position: relative;
 
-  &__div {
+  &__container {
     padding: 137px 20px 160px 20px;
+    min-width: 320px;
+  }
+
+  &__primary-div {
+    display: flex;
   }
 
   &__title-div {
     width: 218px;
+    position: relative;
+    z-index: 3;
   }
 
   &__title {
@@ -46,6 +53,11 @@ ul {
     gap: 8px;
   }
 
+  &__button-link {
+    text-decoration: none;
+    outline: none;
+  }
+
   &__button {
     display: flex;
     flex-direction: row;
@@ -60,11 +72,16 @@ ul {
     font-size: 8px;
     line-height: 1.25;
     cursor: pointer;
+    outline: none;
 
     &--red {
       background: #d41443;
       color: #ffffff;
       width: 62.4px;
+
+      &:visited {
+        color: #ffffff;
+      }
 
       &:hover,
       &:focus {
@@ -77,11 +94,19 @@ ul {
       color: #d41443;
       width: 82.8px;
 
+      &:visited {
+        color: #d41443;
+      }
+
       &:hover,
       &:focus {
         background: #ecebeb;
       }
     }
+  }
+
+  &__numbers-div {
+    display: none;
   }
 
   &__description {
@@ -91,12 +116,38 @@ ul {
   &__arrow {
     display: none;
   }
+
+  &__circle-pink {
+    position: absolute;
+    min-width: 346px;
+    height: 344px;
+    left: 36px;
+    bottom: 75px;
+  }
+
+  &__milk-jug {
+    position: absolute;
+    display: none;
+  }
+
+  &__icecream {
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    bottom: 0;
+    left: 117px;
+  }
+
+  &__icecream-eat {
+    position: absolute;
+    display: none;
+  }
 }
 
 //tablet
 @media (min-width: 768px) {
   .hero {
-    &__div {
+    &__container {
       padding: 6px 34px 34px 34px;
     }
 
@@ -115,6 +166,56 @@ ul {
     &__title-span {
       font-size: 34px;
       line-height: 0.905;
+    }
+
+    &__numbers-div {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      margin-left: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    &__cafes,
+    &__foodtrucks {
+      padding-right: 10px;
+      position: relative;
+    }
+
+    &__number {
+      position: relative;
+      font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.14;
+      text-align: right;
+      letter-spacing: 0.04em;
+      color: #d41443;
+      z-index: 3;
+    }
+
+    &__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    &__circle-white {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      background: #ffffff;
+      border-radius: 50%;
+      border: none;
+      z-index: 2;
     }
 
     &__description {
@@ -138,13 +239,43 @@ ul {
       height: 18px;
       cursor: pointer;
     }
+
+    &__circle-pink {
+      min-width: 324px;
+      height: 322px;
+      left: 307px;
+      bottom: 46px;
+    }
+
+    &__milk-jug {
+      display: block;
+      width: 124px;
+      height: 126px;
+      bottom: 28px;
+      left: 34px;
+    }
+
+    &__icecream {
+      width: 143px;
+      height: 336px;
+      left: 378px;
+      bottom: 0;
+    }
+
+    &__icecream-eat {
+      display: block;
+      width: 168px;
+      height: 133px;
+      right: 34px;
+      bottom: 0;
+    }
   }
 }
 
 //desktop
 @media (min-width: 1200px) {
   .hero {
-    &__div {
+    &__container {
       padding: 68px 97px 56px 46px;
     }
 
@@ -184,6 +315,35 @@ ul {
       }
     }
 
+    &__numbers-div {
+      gap: 15px;
+    }
+
+    &__cafes,
+    &__foodtrucks {
+      padding-right: 18px;
+    }
+
+    &__number {
+      font-size: 46px;
+      line-height: 1.15;
+    }
+
+    &__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.29;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    &__circle-white {
+      width: 30px;
+      height: 30px;
+    }
+
     &__description {
       width: 200px;
       margin-top: 112px;
@@ -198,6 +358,34 @@ ul {
       margin-left: 249px;
       width: 26px;
       height: 26px;
+    }
+
+    &__circle-pink {
+      min-width: 538px;
+      height: 538px;
+      left: 475px;
+      bottom: 75px;
+    }
+
+    &__milk-jug {
+      width: 188px;
+      height: 191px;
+      bottom: 45px;
+      left: 77px;
+    }
+
+    &__icecream {
+      width: 236px;
+      height: 557px;
+      left: 594px;
+      bottom: 0;
+    }
+
+    &__icecream-eat {
+      width: 293px;
+      height: 232px;
+      right: 109px;
+      bottom: 0;
     }
   }
 }

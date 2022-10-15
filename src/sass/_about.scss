@@ -7,7 +7,7 @@
     background-color: rgba(255, 245, 246, 1);
 
     &__container {
-        max-width: 767px;
+        min-width: 320px;
         margin: 0;
         padding: 0 20px;
     }
@@ -144,5 +144,71 @@
         margin-right: 60px;
         margin-right: auto;
     }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .about {
+        min-width: 1200px;
+        position: relative;
+
+        &__container {
+            min-width: 1200px;
+            display: flex;
+            flex-direction: row;
+            align-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        &__title {
+            width: 100%;
+            font-size: 58px;
+            padding-bottom: 102px;
+                       
+            &--secondary {
+              font-size: 30px;
+              width: 100%;
+              padding-bottom: 0;
+              padding-top: 125px;
+            }
+    }
+
+    &__text {
+        margin: auto;
+        width: 463px;
+        font-size: 14px;
+        padding-top: 45px;
+        line-height: 24.64px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+
+    &__picture {
+        width: 516px;
+        height: 516px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: 70px;
+    }
+
+    &__btn {
+        display: flex;
+        margin-top: 42px;
+    }
+    
+    &__tablet {
+        width: 463px;
+        margin-right: 60px;
+        margin-right: auto;
+    }
+
+    &__background-img {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+    }
+
     }
 }

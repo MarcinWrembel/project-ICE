@@ -14,7 +14,6 @@ ul {
 .hero {
   background: #ffb8ca;
   position: relative;
-  overflow-x: hidden;
 
   &__container {
     padding: 137px 20px 160px 20px;
@@ -120,7 +119,7 @@ ul {
 
   &__circle-pink {
     position: absolute;
-    width: 346px;
+    min-width: 346px;
     height: 344px;
     left: 36px;
     bottom: 75px;
@@ -242,7 +241,7 @@ ul {
     }
 
     &__circle-pink {
-      width: 324px;
+      min-width: 324px;
       height: 322px;
       left: 307px;
       bottom: 46px;
@@ -362,7 +361,7 @@ ul {
     }
 
     &__circle-pink {
-      width: 538px;
+      min-width: 538px;
       height: 538px;
       left: 475px;
       bottom: 75px;

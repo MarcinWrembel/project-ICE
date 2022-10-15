@@ -15,7 +15,7 @@ ul {
   background: #ffb8ca;
   position: relative;
 
-  &__div {
+  &__container {
     display: flex;
     padding: 6px 20px 0 20px;
     min-width: 320px;
@@ -54,7 +54,7 @@ ul {
 //tablet
 @media (min-width: 768px) {
   .header {
-    &__div {
+    &__container {
       padding: 37px 34px 0 34px;
     }
 
@@ -92,7 +92,7 @@ ul {
 //desktop
 @media (min-width: 1200px) {
   .header {
-    &__div {
+    &__container {
       padding: 37px 115px 0 46px;
     }
 

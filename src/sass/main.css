@@ -9,13 +9,6 @@ body {
   font-family: "DM sans", sans-serif;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-body,
 h1,
 h2,
 h3,
@@ -28,6 +21,12 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   background: #ffb8ca;
   position: relative;
@@ -35,9 +34,14 @@ ul {
 .header__div {
   display: flex;
   padding: 6px 20px 0 20px;
+  min-width: 320px;
+}
+.header__navigation {
+  z-index: 4;
 }
 .header__logo-link {
   cursor: pointer;
+  outline: none;
 }
 .header__nav-list {
   display: none;
@@ -50,9 +54,11 @@ ul {
   cursor: pointer;
   background: transparent;
   border: none;
+  z-index: 2;
 }
 .header__button {
   display: none;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -79,6 +85,7 @@ ul {
     text-align: center;
     color: #d41443;
     cursor: pointer;
+    outline: none;
   }
   .header__button:hover, .header__button:focus {
     background: #ecebeb;
@@ -106,6 +113,7 @@ ul {
     font-size: 16px;
     line-height: 1.31;
     cursor: pointer;
+    outline: none;
   }
   .header__nav-link--active {
     color: #d41443;
@@ -151,9 +159,15 @@ ul {
 }
 .hero__div {
   padding: 137px 20px 160px 20px;
+  min-width: 320px;
+}
+.hero__primary-div {
+  display: flex;
 }
 .hero__title-div {
   width: 218px;
+  position: relative;
+  z-index: 3;
 }
 .hero__title {
   font-family: "Titan One";
@@ -175,6 +189,10 @@ ul {
   display: flex;
   gap: 8px;
 }
+.hero__button-link {
+  text-decoration: none;
+  outline: none;
+}
 .hero__button {
   display: flex;
   flex-direction: row;
@@ -189,11 +207,15 @@ ul {
   font-size: 8px;
   line-height: 1.25;
   cursor: pointer;
+  outline: none;
 }
 .hero__button--red {
   background: #d41443;
   color: #ffffff;
   width: 62.4px;
+}
+.hero__button--red:visited {
+  color: #ffffff;
 }
 .hero__button--red:hover, .hero__button--red:focus {
   background: #c7133e;
@@ -203,13 +225,41 @@ ul {
   color: #d41443;
   width: 82.8px;
 }
+.hero__button--white:visited {
+  color: #d41443;
+}
 .hero__button--white:hover, .hero__button--white:focus {
   background: #ecebeb;
+}
+.hero__numbers-div {
+  display: none;
 }
 .hero__description {
   display: none;
 }
 .hero__arrow {
+  display: none;
+}
+.hero__circle-pink {
+  position: absolute;
+  width: 346px;
+  height: 344px;
+  left: 36px;
+  bottom: 75px;
+}
+.hero__milk-jug {
+  position: absolute;
+  display: none;
+}
+.hero__icecream {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  bottom: 0;
+  left: 117px;
+}
+.hero__icecream-eat {
+  position: absolute;
   display: none;
 }
 
@@ -231,6 +281,50 @@ ul {
     font-size: 34px;
     line-height: 0.905;
   }
+  .hero__numbers-div {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+  }
+  .hero__cafes, .hero__foodtrucks {
+    padding-right: 10px;
+    position: relative;
+  }
+  .hero__number {
+    position: relative;
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #d41443;
+    z-index: 3;
+  }
+  .hero__text {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: #ffffff;
+  }
+  .hero__circle-white {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: none;
+    z-index: 2;
+  }
   .hero__description {
     display: block;
     width: 114px;
@@ -250,6 +344,32 @@ ul {
     width: 18px;
     height: 18px;
     cursor: pointer;
+  }
+  .hero__circle-pink {
+    width: 324px;
+    height: 322px;
+    left: 307px;
+    bottom: 46px;
+  }
+  .hero__milk-jug {
+    display: block;
+    width: 124px;
+    height: 126px;
+    bottom: 28px;
+    left: 34px;
+  }
+  .hero__icecream {
+    width: 143px;
+    height: 336px;
+    left: 378px;
+    bottom: 0;
+  }
+  .hero__icecream-eat {
+    display: block;
+    width: 168px;
+    height: 133px;
+    right: 34px;
+    bottom: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -285,6 +405,29 @@ ul {
   .hero__button--white {
     width: 138px;
   }
+  .hero__numbers-div {
+    gap: 15px;
+  }
+  .hero__cafes, .hero__foodtrucks {
+    padding-right: 18px;
+  }
+  .hero__number {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .hero__text {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: right;
+    color: #ffffff;
+  }
+  .hero__circle-white {
+    width: 30px;
+    height: 30px;
+  }
   .hero__description {
     width: 200px;
     margin-top: 112px;
@@ -299,14 +442,38 @@ ul {
     width: 26px;
     height: 26px;
   }
+  .hero__circle-pink {
+    width: 538px;
+    height: 538px;
+    left: 475px;
+    bottom: 75px;
+  }
+  .hero__milk-jug {
+    width: 188px;
+    height: 191px;
+    bottom: 45px;
+    left: 77px;
+  }
+  .hero__icecream {
+    width: 236px;
+    height: 557px;
+    left: 594px;
+    bottom: 0;
+  }
+  .hero__icecream-eat {
+    width: 293px;
+    height: 232px;
+    right: 109px;
+    bottom: 0;
+  }
 }
 .mobile-menu {
   background-color: #e17992;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100vh;
-  width: 100vw;
+  width: 250px;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -385,6 +552,15 @@ ul {
   transform: translateX(0);
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    height: 100vh;
+    width: 254px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .mobile-menu {
     display: none;
@@ -428,15 +604,18 @@ ul {
   background-color: #FFF5F6;
   min-width: 320px;
 }
+.footer__container {
+  padding-top: 50px;
+}
 .footer__heading {
   margin: 0 auto;
   color: #FFA5BA;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   font-family: "Titan One";
   font-size: 18px;
   line-height: 1.145;
+  letter-spacing: 0.04em;
   padding: 0 66px 0 22px;
 }
 .footer__heading--color {
@@ -485,6 +664,8 @@ ul {
   margin-top: 60px;
   font-style: normal;
   padding-bottom: 40px;
+  text-align: right;
+  margin-right: 20px;
 }
 
 .address__container {
@@ -500,24 +681,80 @@ ul {
   text-align: center;
 }
 .footer__paragraph--position {
-  padding-top: 20px;
-  margin-bottom: 15px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 .footer__paragraph--position-two {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 480px) {
+  .footer__container {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer__container {
+    padding-bottom: 70px;
+  }
   .footer__heading {
+    font-size: 26px;
+    display: inline-block;
+    padding-right: 90px;
+    width: 430px;
+    letter-spacing: 0.06em;
+  }
+  .footer__heading--color {
+    font-size: 48px;
+  }
+  .footer__paragraph {
     display: inline-block;
   }
+  .footer__address {
+    display: inline-block;
+    position: absolute;
+    padding-top: 30px;
+    font-size: 14px;
+  }
+  .footer__list {
+    display: inline-flex;
+    position: absolute;
+    margin-top: 0;
+    width: 320px;
+  }
   .address__container {
-    text-align: right;
-    margin-right: 25px;
+    text-align: center;
+    padding-top: 15px;
   }
-  .footer__container {
-    align-items: baseline;
+}
+@media screen and (min-width: 1200px) {
+  .footer__heading {
+    font-size: 34px;
+    width: 800px;
+    letter-spacing: 0.06em;
+    padding-left: 100px;
   }
+  .footer__heading--color {
+    font-size: 66px;
+    letter-spacing: 0.07em;
+    padding: 0;
+  }
+  .footer__address {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+  .address__container {
+    padding-top: 5px;
+  }
+  .footer__list {
+    margin-left: 30px;
+  }
+}
+.advantages-section {
+  min-width: 320px;
+  padding: 0 20px;
+  width: 100%;
+  background-color: #fff5f6;
 }
 
 .advantages {
@@ -526,7 +763,7 @@ ul {
 .advantages__list {
   list-style-type: none;
   display: flex;
-
+  flex-direction: column;
 }
 .advantages__item {
   font-family: "Titan One";
@@ -591,14 +828,12 @@ ul {
 .advantages__description {
   font-family: "DM Sans";
   font-weight: 700;
-
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.02em;
   color: #000000;
-
   flex-direction: column;
 }
 
@@ -608,7 +843,6 @@ ul {
     display: flex;
     justify-content: center;
   }
-
   .advantages__list {
     flex-direction: column;
   }
@@ -616,7 +850,6 @@ ul {
     font-size: 48px;
     line-height: 1.14;
   }
-
   .advantages__item::before {
     margin-bottom: 36px;
   }
@@ -654,7 +887,6 @@ ul {
   }
   .advantages__flex {
     display: flex;
-
   }
 }
 .gallery__tittle {
@@ -662,54 +894,21 @@ ul {
 }
 
 .gallery {
-
-  background-image: url("/images/gallery.png");
-  width: 364px;
-  height: 122px;
-
-  background-size: 100%;
+  width: 100%;
+  padding-bottom: 123px;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .gallery {
-    background-image: url("/images/gallery@2x.png");
+/*
+.gallery {
+  background-image: url('/images/gallery_desktop@x2.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/images/gallery_desktop@x2.png');
   }
-}
-/*TABLET*/
-@media screen and (min-width: 768px) {
-  .gallery {
-    width: 786px;
-    height: 264px;
-    background-size: 100%;
 
-    background-image: url("/images/gallery.png");
-
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: url('/images/gallery_desktop@x2.png');
   }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .gallery {
-    background-image: url("/images/gallery@3x.png");
-  }
-}
-/*DESKTOP*/
-@media screen and (min-width: 1200px) {
-  .gallery {
-    background-size: 100%;
-
-    background-image: url("/images/gallery.png");
-    width: 1280px;
-    height: 430px;
-
-
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .gallery {
-
-    background-image: url("/images/gallery@4x.png");
-
-  }
-}
+}*/
 .button__nav {
   font-family: "DM Sans";
   font-size: 16px;
@@ -722,9 +921,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-
-  transition-property: background-color;
-
+  transition-property: color, background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -746,10 +943,9 @@ ul {
   background: #d41443;
   border-radius: 20px;
   cursor: pointer;
-
   transition-property: color, background-color;
   transition-duration: 500ms;
-
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__header-one:hover {
   background: #c7133e;
@@ -768,9 +964,7 @@ ul {
   background: #ffffff;
   border-radius: 20px;
   cursor: pointer;
-
-  transition-property: background-color;
-
+  transition-property: color, background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -790,7 +984,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-
+  transition-property: color, background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -825,7 +1019,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-
+  transition-property: color, background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

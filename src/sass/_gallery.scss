@@ -23,7 +23,7 @@
     width: 786px;
     height: 264px;
     background-size: 100%;
-    background-image: url('/images/gallery.png');
+    background-image: url('/images/gallery@2x');
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -38,7 +38,7 @@
 @media screen and (min-width: 1200px) {
   .gallery {
     background-size: 100%;
-    background-image: url('/images/gallery.png');
+    background-image: url('/images/gallery_desktop@x2.png');
     width: 1280px;
     height: 430px;
   }

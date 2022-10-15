@@ -14,9 +14,9 @@ ul {
 .hero {
   background: #ffb8ca;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
-  &__div {
+  &__container {
     padding: 137px 20px 160px 20px;
     min-width: 320px;
   }
@@ -148,7 +148,7 @@ ul {
 //tablet
 @media (min-width: 768px) {
   .hero {
-    &__div {
+    &__container {
       padding: 6px 34px 34px 34px;
     }
 
@@ -276,7 +276,7 @@ ul {
 //desktop
 @media (min-width: 1200px) {
   .hero {
-    &__div {
+    &__container {
       padding: 68px 97px 56px 46px;
     }
 

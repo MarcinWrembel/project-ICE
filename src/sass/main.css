@@ -477,8 +477,9 @@ ul {
     max-width: 1200px;
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    align-content: space-around;
     flex-wrap: wrap;
+    gap: 17px;
   }
   .about__title {
     width: 100%;
@@ -496,12 +497,14 @@ ul {
     font-size: 14px;
     padding-top: 90px;
     line-height: 24.64px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .about__picture {
     width: 340px;
     height: 339px;
+    margin: 0;
     margin-left: auto;
-    margin-right: auto;
   }
   .about__btn {
     display: flex;
@@ -510,6 +513,8 @@ ul {
   }
   .about__tablet {
     width: 340px;
+    margin-right: 60px;
+    margin-right: auto;
   }
 }
 .footer {

@@ -2,6 +2,10 @@
     background-color: #FFF5F6;
     min-width: 320px;
 
+    &__container {
+        padding-top: 50px;
+    }
+
 
     &__heading {
         margin: 0 auto;
@@ -11,6 +15,7 @@
         font-family: "Titan One";
         font-size: 18px;
         line-height: 1.145;
+        letter-spacing: 0.04em;
         padding: 0 66px 0 22px;
 
         &--color {
@@ -93,18 +98,24 @@
 
 
     &--position {
-        padding-top: 20px;
-        margin-bottom: 15px;
+        padding-top: 10px;
+        margin-bottom: 10px;
 
         &-two {
-            padding-bottom: 25px;
+            padding-bottom: 15px;
         }
     }
 
 
 }
 
-@media screen and (min-width: 768px) and (max-width:1200px) {
+@media(min-width:480px) {
+    .footer__container {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
 
     .footer__container {
         padding-bottom: 70px;
@@ -115,6 +126,8 @@
         font-size: 26px;
         display: inline-block;
         padding-right: 90px;
+        width: 430px;
+        letter-spacing: 0.06em;
 
     }
 
@@ -126,14 +139,13 @@
         display: inline-block;
     }
 
-    .footer__paragraph--position {
-        margin-left: 250px;
-    }
+
 
     .footer__address {
         display: inline-block;
         position: absolute;
         padding-top: 30px;
+        font-size: 14px;
 
     }
 
@@ -143,10 +155,38 @@
         margin-top: 0;
         width: 320px;
     }
+
+    .address__container {
+        text-align: center;
+        padding-top: 15px;
+    }
 }
 
-@media (min-width: 1200px) {
-    .footer__container {
-        width: 1170px;
+@media screen and (min-width: 1200px) {
+    .footer__heading {
+        font-size: 34px;
+        width: 800px;
+        letter-spacing: 0.06em;
+        padding-left: 100px;
+    }
+
+    .footer__heading--color {
+        font-size: 66px;
+        letter-spacing: 0.07em;
+        padding: 0;
+    }
+
+    .footer__address {
+        font-size: 16px;
+        margin-left: 30px;
+
+    }
+
+    .address__container {
+        padding-top: 5px;
+    }
+
+    .footer__list {
+        margin-left: 30px;
     }
 }

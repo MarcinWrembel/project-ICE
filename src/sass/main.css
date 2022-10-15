@@ -627,7 +627,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  transition-property: background-color;
+  transition-property: color, background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -649,6 +649,9 @@ ul {
   background: #d41443;
   border-radius: 20px;
   cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__header-one:hover {
   background: #c7133e;
@@ -667,7 +670,7 @@ ul {
   background: #ffffff;
   border-radius: 20px;
   cursor: pointer;
-  transition-property: background-color;
+  transition-property: color, background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -687,7 +690,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  transition-property: background-color;
+  transition-property: color, background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -722,7 +725,7 @@ ul {
   background: #ffffff;
   border-radius: 22px;
   cursor: pointer;
-  transition-property: background-color;
+  transition-property: color, background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

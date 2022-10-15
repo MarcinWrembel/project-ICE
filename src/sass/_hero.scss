@@ -20,6 +20,10 @@ ul {
     min-width: 320px;
   }
 
+  &__primary-div {
+    display: flex;
+  }
+
   &__title-div {
     width: 218px;
     position: relative;
@@ -51,6 +55,7 @@ ul {
 
   &__button-link {
     text-decoration: none;
+    outline: none;
   }
 
   &__button {
@@ -67,6 +72,7 @@ ul {
     font-size: 8px;
     line-height: 1.25;
     cursor: pointer;
+    outline: none;
 
     &--red {
       background: #d41443;
@@ -97,6 +103,10 @@ ul {
         background: #ecebeb;
       }
     }
+  }
+
+  &__numbers-div {
+    display: none;
   }
 
   &__description {
@@ -156,6 +166,35 @@ ul {
     &__title-span {
       font-size: 34px;
       line-height: 0.905;
+    }
+
+    &__numbers-div {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    &__number {
+      font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.14;
+      text-align: right;
+      letter-spacing: 0.04em;
+      color: #d41443;
+    }
+
+    &__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      text-align: right;
+      color: #ffffff;
     }
 
     &__description {
@@ -253,6 +292,21 @@ ul {
       &--white {
         width: 138px;
       }
+    }
+
+    &__number {
+      font-size: 46px;
+      line-height: 1.15;
+    }
+
+    &__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.29;
+      text-align: right;
+      color: #ffffff;
     }
 
     &__description {

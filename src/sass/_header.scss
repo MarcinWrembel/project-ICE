@@ -27,6 +27,7 @@ ul {
 
   &__logo-link {
     cursor: pointer;
+    outline: none;
   }
 
   &__nav-list {
@@ -41,10 +42,12 @@ ul {
     cursor: pointer;
     background: transparent;
     border: none;
+    z-index: 2;
   }
 
   &__button {
     display: none;
+    z-index: 2;
   }
 }
 
@@ -76,6 +79,7 @@ ul {
       text-align: center;
       color: #d41443;
       cursor: pointer;
+      outline: none;
 
       &:hover,
       &:focus {
@@ -112,6 +116,7 @@ ul {
       font-size: 16px;
       line-height: 1.31;
       cursor: pointer;
+      outline: none;
 
       &--active {
         color: #d41443;

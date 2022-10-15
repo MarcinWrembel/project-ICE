@@ -14,7 +14,6 @@ ul {
 .hero {
   background: #ffb8ca;
   position: relative;
-  z-index: -2;
 
   &__div {
     padding: 137px 20px 160px 20px;
@@ -99,7 +98,6 @@ ul {
     height: 344px;
     left: 36px;
     bottom: 75px;
-    z-index: -1;
   }
 
   &__milk-jug {

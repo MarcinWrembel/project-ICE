@@ -15,6 +15,7 @@
 
   &__logo-link {
     cursor: pointer;
+    outline: none;
   }
 
   &__nav-list {
@@ -29,10 +30,12 @@
     cursor: pointer;
     background: transparent;
     border: none;
+    z-index: 2;
   }
 
   &__button {
     display: none;
+    z-index: 2;
   }
 }
 
@@ -64,6 +67,7 @@
       text-align: center;
       color: #d41443;
       cursor: pointer;
+      outline: none;
 
       &:hover,
       &:focus {
@@ -100,6 +104,7 @@
       font-size: 16px;
       line-height: 1.31;
       cursor: pointer;
+      outline: none;
 
       &--active {
         color: #d41443;

@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap');
 
 .about {
+    position: relative;
     min-width: 320px;
     text-align: center;
     background-color: rgba(255, 245, 246, 1);
+    z-index: 1;
 
     &__container {
         min-width: 320px;
@@ -20,6 +22,7 @@
     font-size: 34px;
     text-transform: uppercase;
     font-family: 'Titan One', cursive;
+    font-weight: 400;
     
     &--secondary {
       padding-top: 125px;
@@ -89,6 +92,24 @@
             outline: none;
         }
     }
+    &__background-img {
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        top: 760px;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width:640px) {
+    .about {
+        &__background-img {
+            top: 670px;
+        }
+    }
+
 }
 
 @media screen and (min-width:768px) and (max-width:1200px) {
@@ -144,13 +165,16 @@
         margin-right: 60px;
         margin-right: auto;
     }
+    &__background-img {
+        display: none;
+    }
     }
 }
 
 @media screen and (min-width:1200px) {
     .about {
         min-width: 1200px;
-        position: relative;
+        z-index: 1;
 
         &__container {
             min-width: 1200px;
@@ -181,7 +205,6 @@
         line-height: 24.64px;
         margin-left: auto;
         margin-right: auto;
-        z-index: 1;
     }
 
     &__picture {
@@ -195,6 +218,7 @@
     &__btn {
         display: flex;
         margin-top: 42px;
+        cursor: pointer;
     }
     
     &__tablet {
@@ -204,11 +228,8 @@
     }
 
     &__background-img {
-        width: 100%;
         position: absolute;
-        z-index: 2;
-        top: 40px;
+        top: 370px;
     }
-
     }
 }

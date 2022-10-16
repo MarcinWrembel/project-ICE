@@ -135,6 +135,9 @@
       width: 3.61px;
       height: 8px;
     }
+    &__dot-background {
+      display: none;
+    }
   }
 }
 
@@ -221,12 +224,16 @@
       width: 174.05px;
       margin: 0;
     }
+    &__dot-background {
+      display: none;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts {
     background: linear-gradient(180deg, #ffffff 102px, #fff5f6 102px);
+    position: relative;
     &__cards-container {
       display: flex;
       flex-wrap: wrap;
@@ -290,6 +297,16 @@
     &__btn-franchise {
       width: 180px;
       margin: 0;
+    }
+    &__dot-background {
+      display: unset;
+      height: 382px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 102px;
     }
   }
 }

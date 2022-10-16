@@ -1,115 +1,114 @@
-.button__nav {
-  font-family: 'DM Sans';
-  font-size: 16px;
-  line-height: 1.31;
-  width: 159px;
-  height: 44px;
-  text-align: center;
-  color: #d41443;
-  border-style: none;
-  background: #ffffff;
-  border-radius: 22px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// @mixin transition {
+//   transition-property: color, background-color;
+//   transition-duration: 500ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
-  &:hover {
-    color: rgba(212, 20, 67, 1);
-    background: #ecebeb;
-    border-style: none;
-  }
-}
+// .button__nav {
+//   font-family: 'DM Sans';
+//   font-size: 16px;
+//   line-height: 1.31;
+//   width: 159px;
+//   height: 44px;
+//   text-align: center;
+//   color: #d41443;
+//   border-style: none;
+//   background: #ffffff;
+//   border-radius: 22px;
+//   cursor: pointer;
+//   @include transition;
 
-.button__header-one {
-  font-family: 'DM Sans';
-  font-size: 14px;
-  line-height: 1.28;
-  width: 104px;
-  height: 40px;
-  text-align: center;
-  color: white;
-  border-style: none;
-  background: #d41443;
-  border-radius: 20px;
-  cursor: pointer;
-  &:hover {
-    background: #c7133e;
-    color: #ffffff;
-  }
-}
+//   &:hover {
+//     color: rgba(212, 20, 67, 1);
+//     background: #ecebeb;
+//     border-style: none;
+//   }
+// }
 
-.button__header-two {
-  font-family: 'DM Sans';
-  line-height: 1.28;
-  font-size: 14px;
-  width: 138px;
-  height: 40px;
-  text-align: center;
-  color: rgba(212, 20, 67, 1);
-  border-style: none;
-  background: #ffffff;
-  border-radius: 20px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background-color: #ecebeb;
-  }
-}
-.button__about {
-  font-family: 'DM Sans';
-  font-size: 16px;
-  line-height: 1.31;
-  width: 176px;
-  height: 44px;
-  text-align: center;
-  color: rgba(212, 20, 67, 1);
-  border-style: none;
-  background: #ffffff;
-  border-radius: 22px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background-color: #ecebeb;
-  }
-}
+// .button__header-one {
+//   font-family: 'DM Sans';
+//   font-size: 14px;
+//   line-height: 1.28;
+//   width: 104px;
+//   height: 40px;
+//   text-align: center;
+//   color: white;
+//   border-style: none;
+//   background: #d41443;
+//   border-radius: 20px;
+//   cursor: pointer;
+//   @include transition;
+//   &:hover {
+//     background: #c7133e;
+//     color: #ffffff;
+//   }
+// }
 
-.button__contacts-one {
-  font-family: 'DM Sans';
-  font-size: 16px;
-  line-height: 1.31;
-  width: 198px;
-  height: 44px;
-  text-align: center;
-  color: #ffffff;
-  border-style: none;
-  background: #d41342;
-  border-radius: 22px;
-  cursor: pointer;
-}
+// .button__header-two {
+//   font-family: 'DM Sans';
+//   line-height: 1.28;
+//   font-size: 14px;
+//   width: 138px;
+//   height: 40px;
+//   text-align: center;
+//   color: rgba(212, 20, 67, 1);
+//   border-style: none;
+//   background: #ffffff;
+//   border-radius: 20px;
+//   cursor: pointer;
+//   @include transition;
+//   &:hover {
+//     background-color: #ecebeb;
+//   }
+// }
+// .button__about {
+//   font-family: 'DM Sans';
+//   font-size: 16px;
+//   line-height: 1.31;
+//   width: 176px;
+//   height: 44px;
+//   text-align: center;
+//   color: rgba(212, 20, 67, 1);
+//   border-style: none;
+//   background: #ffffff;
+//   border-radius: 22px;
+//   cursor: pointer;
+//   @include transition;
+//   &:hover {
+//     background-color: #ecebeb;
+//   }
+// }
 
-.button__contacts-two {
-  font-family: 'DM Sans';
-  font-size: 16px;
-  line-height: 1.31;
-  width: 180px;
-  height: 44px;
-  line-height: 21px;
-  text-align: center;
-  color: #d41443;
-  border-style: none;
-  background: #ffffff;
-  border-radius: 22px;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// .button__contacts-one {
+//   font-family: 'DM Sans';
+//   font-size: 16px;
+//   line-height: 1.31;
+//   width: 198px;
+//   height: 44px;
+//   text-align: center;
+//   color: #ffffff;
+//   border-style: none;
+//   background: #d41342;
+//   border-radius: 22px;
+//   cursor: pointer;
+// }
 
-  &:hover {
-    background-color: #ecebeb;
-  }
-}
+// .button__contacts-two {
+//   font-family: 'DM Sans';
+//   font-size: 16px;
+//   line-height: 1.31;
+//   width: 180px;
+//   height: 44px;
+//   line-height: 21px;
+//   text-align: center;
+//   color: #d41443;
+//   border-style: none;
+//   background: #ffffff;
+//   border-radius: 22px;
+//   cursor: pointer;
+//   @include transition;
+
+//   &:hover {
+//     background-color: #ecebeb;
+//   }
+// }

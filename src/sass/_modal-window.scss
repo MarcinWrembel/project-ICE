@@ -60,6 +60,7 @@ input[type='checkbox']:checked::before {
   box-shadow: 0px 8px 28px 1px rgba(212, 20, 67, 0.34);
   -webkit-backdrop-filter: blur(4.5px);
   backdrop-filter: blur(4.5px);
+
   border-radius: 20px;
   z-index: 99;
   display: flex;

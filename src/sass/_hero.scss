@@ -1,21 +1,8 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .hero {
   background: #ffb8ca;
   position: relative;
 
-  &__div {
+  &__container {
     padding: 137px 20px 160px 20px;
     min-width: 320px;
   }
@@ -119,7 +106,7 @@ ul {
 
   &__circle-pink {
     position: absolute;
-    width: 346px;
+    min-width: 346px;
     height: 344px;
     left: 36px;
     bottom: 75px;
@@ -147,7 +134,7 @@ ul {
 //tablet
 @media (min-width: 768px) {
   .hero {
-    &__div {
+    &__container {
       padding: 6px 34px 34px 34px;
     }
 
@@ -241,7 +228,7 @@ ul {
     }
 
     &__circle-pink {
-      width: 324px;
+      min-width: 324px;
       height: 322px;
       left: 307px;
       bottom: 46px;
@@ -275,7 +262,7 @@ ul {
 //desktop
 @media (min-width: 1200px) {
   .hero {
-    &__div {
+    &__container {
       padding: 68px 97px 56px 46px;
     }
 
@@ -361,7 +348,7 @@ ul {
     }
 
     &__circle-pink {
-      width: 538px;
+      min-width: 538px;
       height: 538px;
       left: 475px;
       bottom: 75px;

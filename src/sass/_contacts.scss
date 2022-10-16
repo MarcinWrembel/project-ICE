@@ -103,9 +103,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: transparent;
     margin: 0 auto;
+    gap: 9px;
   }
   &__btn-franchise {
     width: 161px;
@@ -125,17 +125,23 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border: transparent;
     margin: 0 auto;
+    gap: 13px;
     &:hover {
       background: #ecebeb;
     }
-
-    &__dot-background {
-      display: none;
-    }
   }
-  &__icon {
+  &__icon-first {
     fill: none;
-    stroke: white;
+    stroke: #ffffff;
+
+  }
+  &__icon-second {
+    fill: none;
+    stroke: #d41443;
+
+  }
+  &__dot-background {
+    display: none;
   }
 }
 
@@ -217,13 +223,11 @@
     &__btn-locations {
       width: 191.45px;
       margin: 0;
+      gap: 13px;
     }
     &__btn-franchise {
       width: 174.05px;
       margin: 0;
-    }
-    &__dot-background {
-      display: none;
     }
   }
 }
@@ -234,14 +238,15 @@
     position: relative;
     &__cards-container {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 31px;
-      margin-left: 115px;
-      margin-right: 115px;
+      margin-left: auto;
+      margin-right: auto;
     }
     &__card {
       margin: 0;
-      flex-basis: calc((100% - 62px) / 3);
+      max-width: 330px;
       height: 572px;
       padding-left: 44px;
       padding-top: 51px;

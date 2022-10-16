@@ -88,10 +88,10 @@
 
 @media screen and (min-width: 768px) {
   .advantages-section {
-  padding: 66px 76px 140px 36px;
-  display: flex;
-  justify-content: center;
-}
+    padding: 66px 76px 140px 36px;
+    display: flex;
+    justify-content: center;
+  }
 
   .advantages__item {
     font-size: 48px;
@@ -136,4 +136,5 @@
 
   .advantages__list {
     gap: 30px;
-  }}
+  }
+}

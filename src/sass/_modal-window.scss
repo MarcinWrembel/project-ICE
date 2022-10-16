@@ -160,7 +160,7 @@ input[type='checkbox']:checked::before {
     padding-bottom: 15px;
     // padding-left: 21px;
     transition: 0.2s linear;
-    
+
     &:focus-within,
     &focus,
     &:hover {
@@ -241,17 +241,15 @@ input[type='checkbox']:checked::before {
   }
   .modal__header {
     font-size: calc(1vw + 1.01em);
-    padding-bottom:calc(1vw + 0.1em);
-    padding-top:calc(1vw + 0.1em);
+    padding-bottom: calc(1vw + 0.1em);
+    padding-top: calc(1vw + 0.1em);
   }
   .modal__paragraph {
     font-size: calc(1vw + 0.75em);
     text-align: center;
-    
   }
   .modal__image {
-    width:calc(1vw + 10em);
-    
+    width: calc(1vw + 10em);
   }
   .modal__item {
     flex-wrap: wrap;

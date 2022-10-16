@@ -100,8 +100,9 @@
   .advantages__item {
     font-size: 48px;
     line-height: 1.14;
+    padding-bottom: 140px;
 
-     &::before {
+    &::before {
       margin-bottom: 36px;
     }
   }
@@ -128,7 +129,8 @@
   .advantages__item {
     font-size: 58px;
     line-height: 1.13;
-     &::before {
+    padding-bottom: 139px;
+    &::before {
       margin-bottom: 40px;
     }
   }

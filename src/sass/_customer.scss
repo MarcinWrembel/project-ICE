@@ -45,19 +45,30 @@
     top: -4px;
 }
 
-&__comment-gradient:before {
+&__quote {
     display: inline-flex;
-    content: '';
-    background-image: url('/images/icons.svg#icon-Quote');
-    background-size: 40px 40px;
+    width: 54px;
     height: 40px;
-    width: 40px;
-    border: solid green 2px;
-
+    fill: rgba(225, 225, 225, 1);
     position: absolute;
-    top: -27px;
-    left: -13px;
+    left: -15px;
+    top: -20px;
 }
+
+
+// &__comment-gradient:before {
+//     display: inline-flex;
+//     content: '';
+//     background-image: url('/images/icons.svg#icon-Quote');
+//     background-size: 40px 40px;
+//     height: 40px;
+//     width: 40px;
+//     border: solid green 2px;
+
+//     position: absolute;
+//     top: -27px;
+//     left: -13px;
+// }
 
 
 &__comment-gradient {
@@ -128,7 +139,8 @@
     }
 
     .customer__comment-gradient {
-        width: 524px;
+        width: 460px;
+        /* width: 524px; */
         position: relative;
         top: 3px;
     }

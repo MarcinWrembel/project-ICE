@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap');
 
@@ -22,7 +23,6 @@
     font-size: 34px;
     text-transform: uppercase;
     font-family: 'Titan One', cursive;
-    font-weight: 400;
     
     &--secondary {
       padding-top: 125px;
@@ -109,7 +109,6 @@
             top: 670px;
         }
     }
-
 }
 
 @media screen and (min-width:768px) and (max-width:1200px) {
@@ -233,3 +232,4 @@
     }
     }
 }
+

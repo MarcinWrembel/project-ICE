@@ -1,7 +1,7 @@
 .hero {
   background: #ffb8ca;
   position: relative;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 
   &__container {
     padding: 137px 20px 160px 20px;
@@ -111,6 +111,7 @@
     height: 344px;
     left: 36px;
     bottom: 75px;
+
   }
 
   &__milk-jug {
@@ -135,6 +136,7 @@
 //tablet
 @media (min-width: 768px) {
   .hero {
+    overflow-x: visible;
     &__container {
       padding: 6px 34px 34px 34px;
     }

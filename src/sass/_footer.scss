@@ -3,7 +3,7 @@
   min-width: 320px;
 
   &__container {
-    padding-top: 50px;
+    padding-top: 113px;
   }
 
   &__contacts {
@@ -101,6 +101,7 @@
 
 @media (min-width: 768px) {
   .footer__container {
+    padding-top: 165px;
     padding-bottom: 70px;
     display: flex;
     justify-content: space-between;

@@ -1,32 +1,23 @@
+@use './mixins';
 .products{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include mixins.set-flex(column);
     background-color:#FFFFFF;
     width: 100%;
     margin:0;
 
     &__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include mixins.set-flex(column);
     }
     
     &__header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include mixins.set-flex(column);
         text-transform: uppercase;
-        align-items: center;
         color: #D41443;
         margin: 0;
         margin-bottom:144px;
         font-family: "Titan One";
         font-size: 34px;
-        font-weight: 400;
-        line-height:38.93px ;
+        @include mixins.font-atr(400, 38.93px, 0.04em);
 
         &--text{
             text-transform: uppercase;
@@ -39,17 +30,13 @@
     }
     
     &__cards{
-        display: flex;
-        flex-direction: column;
+        @include mixins.set-flex(column);
         gap:130px;
         margin-bottom:98px;;
     }
 
     &__card{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+        @include mixins.set-flex(column);
         width: 100%;
         max-width:280px;
         height:485px;
@@ -59,10 +46,9 @@
         &--header{
             text-transform: uppercase;
             font-family: "Titan One";
-            font-weight: 400;
             font-size: 20px;
+            @include mixins.font-atr(400, 22.9px, 0.04em);
             color:#FFFFFF;
-            line-height: 22.9px;
             margin-top: 161px;
             margin-bottom:66px;
         }
@@ -70,12 +56,10 @@
         &--text{
             font-family: "DM Sans";
             font-size: 14px;
-            font-weight: 700;
+            @include mixins.font-atr(700, 21.28px, 0.04em);
             align-items: center;
-            font-weight: 700;
             text-align: center;
             color: #FFFFFF;
-            line-height:21.28px;
             margin:0 39px 0 41px;
         }
 
@@ -412,5 +396,4 @@
     }
 
 }
-
 }

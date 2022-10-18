@@ -35,6 +35,12 @@
   &__button {
     display: none;
     z-index: 2;
+
+    &-icon {
+      fill: none;
+      stroke: #d41443;
+      margin-left: 10px;
+    }
   }
 }
 

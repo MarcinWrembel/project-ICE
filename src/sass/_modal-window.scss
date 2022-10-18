@@ -67,7 +67,6 @@ input[type='checkbox']:checked::before {
   transition: 0.2s linear;
 
   &__container {
-    // margin: 35px 54px 35px 54px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +157,6 @@ input[type='checkbox']:checked::before {
     color: rgba(212, 20, 67, 0.5);
     padding-top: 15px;
     padding-bottom: 15px;
-    // padding-left: 21px;
     transition: 0.2s linear;
 
     &:focus-within,
@@ -237,7 +235,6 @@ input[type='checkbox']:checked::before {
   }
   .modal__container {
     min-width: 260px;
-    // padding: 2.5em 1.875em 2.5em 1.875em;
   }
   .modal__header {
     font-size: calc(1vw + 1.01em);

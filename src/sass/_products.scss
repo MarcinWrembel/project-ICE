@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: getColor('productsBackground');
   width: 100%;
   margin: 0;
 
@@ -20,7 +20,7 @@
     justify-content: center;
     text-transform: uppercase;
     align-items: center;
-    color: #d41443;
+    color: getColor('productsHeader');
     margin: 0;
     margin-bottom: 144px;
     font-family: 'Titan One';
@@ -30,7 +30,7 @@
 
     &--text {
       text-transform: uppercase;
-      color: #ffa5ba;
+      color: getColor('productsHeaderText');
       font-size: 18px;
       line-height: 20.61px;
       margin-bottom: 15px;
@@ -61,7 +61,7 @@
       font-family: 'Titan One';
       font-weight: 400;
       font-size: 20px;
-      color: #ffffff;
+      color: getColor('productsCardHeader');
       line-height: 22.9px;
       margin-top: 161px;
       margin-bottom: 66px;
@@ -74,7 +74,7 @@
       align-items: center;
       font-weight: 700;
       text-align: center;
-      color: #ffffff;
+      color: getColor('productsCardText');
       line-height: 21.28px;
       margin: 0 39px 0 41px;
     }
@@ -90,15 +90,15 @@
     }
 
     &:nth-child(1) {
-      background-color: #ffa5ba;
+      background-color: getColor('productsCard1');
     }
 
     &:nth-child(2) {
-      background-color: #f0d1a5;
+      background-color: getColor('productsCard2');
     }
 
     &:nth-child(3) {
-      background-color: #c2e297;
+      background-color: getColor('productsCard3');
     }
   }
 

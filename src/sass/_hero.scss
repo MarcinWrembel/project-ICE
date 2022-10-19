@@ -1,5 +1,5 @@
 .hero {
-  background: #ffb8ca;
+  background: getColor('heroBackground');
   position: relative;
   // overflow-x: hidden;
 
@@ -26,14 +26,14 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: getColor('heroTitle');
     margin-bottom: 19px;
   }
 
   &__title-span {
     font-size: 48px;
     line-height: 0.965;
-    color: #d41443;
+    color: getColor('heroTitleSpan');
   }
 
   &__buttons {
@@ -63,8 +63,8 @@
     outline: none;
 
     &--red {
-      background: #d41443;
-      color: #ffffff;
+      background: getColor('heroButtonRed');
+      color: getColor('heroButtonRedText');
       width: 62.4px;
 
       &:visited {
@@ -73,13 +73,13 @@
 
       &:hover,
       &:focus {
-        background: #c7133e;
+        background: getColor('heroButtonRedHover');
       }
     }
 
     &--white {
-      background: #ffffff;
-      color: #d41443;
+      background: getColor('heroButtonWhite');
+      color: getColor('heroButtonWhiteText');
       width: 82.8px;
 
       &:visited {
@@ -88,7 +88,7 @@
 
       &:hover,
       &:focus {
-        background: #ecebeb;
+        background: getColor('heroButtonWhiteHover');
       }
     }
   }
@@ -200,7 +200,7 @@
       right: 0;
       width: 16px;
       height: 16px;
-      background: #ffffff;
+      background: getColor('heroCircle');
       border-radius: 50%;
       border: none;
       z-index: 2;
@@ -217,7 +217,7 @@
       font-weight: 400;
       font-size: 8px;
       line-height: 1.5;
-      color: #ffffff;
+      color: getColor('heroDescriptionText');
     }
 
     &__arrow {
@@ -324,7 +324,7 @@
       font-size: 14px;
       line-height: 1.29;
       text-align: right;
-      color: #ffffff;
+      color: getColor('heroText');
     }
 
     &__circle-white {

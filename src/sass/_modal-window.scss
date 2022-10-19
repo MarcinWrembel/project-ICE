@@ -5,23 +5,23 @@
 }
 
 ::placeholder {
-  color: rgba(212, 20, 67, 0.5);
+  color: getColor('modalPlaceholderColor');
 }
 
 input[type='checkbox'] {
   height: 25px;
   width: 25px;
   appearance: none;
-  background-color: #fff;
+  background-color: getColor('modalCheckboxBackground');
   margin: 0;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid getColor('modalCheckboxBorder');
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 120ms ease-in-out;
   &:hover {
-    border: 2px solid #d41443;
+    border: 2px solid getColor('modalCheckboxBorderHover');
   }
 }
 
@@ -32,7 +32,7 @@ input[type='checkbox']::before {
   border-radius: 50%;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #d41443;
+  box-shadow: inset 1em 1em getColor('modalCheckboxCustomCheck');
 }
 
 input[type='checkbox']:checked::before {
@@ -47,7 +47,7 @@ input[type='checkbox']:checked::before {
   top: 0;
   width: 100vw;
   height: 100%;
-  background: rgba(212, 20, 67, 0.3);
+  background: getColor('modalBackdropBackground');
   z-index: 99;
   transition: 0.1s linear;
 }
@@ -85,13 +85,13 @@ input[type='checkbox']:checked::before {
     justify-content: center;
   }
   &__close-icon {
-    fill: #d41443;
+    fill: getColor('modalCloseIcon');
     width: 12px;
     height: 12px;
     transition: 0.2s linear;
 
     &:hover {
-      fill: #fff;
+      fill: getColor('modalCloseIconHover');
     }
   }
   &__close-button {
@@ -111,7 +111,7 @@ input[type='checkbox']:checked::before {
 
   &__header {
     font-family: 'Titan One', cursive;
-    color: #d41443;
+    color: getColor('modalHeader');
     font-size: 28px;
     letter-spacing: 0.04em;
     list-style: none;
@@ -123,7 +123,7 @@ input[type='checkbox']:checked::before {
     font-size: 24px;
     line-height: 1.3;
 
-    color: #d41443;
+    color: getColor('modalParagraph');
   }
 
   &__image {
@@ -135,9 +135,9 @@ input[type='checkbox']:checked::before {
     line-height: 1.27;
     padding: 11px 48px 11px 48px;
     border-radius: 22px;
-    color: #d41443;
+    color: getColor('modalButtonText');
     border-style: none;
-    background-color: #fff;
+    background-color: getColor('modalButton');
     transition: background-color 0.2s linear;
     cursor: pointer;
     &:hover {
@@ -146,29 +146,29 @@ input[type='checkbox']:checked::before {
     }
   }
 
-  &__input-field {
-    background: #fff;
-    box-shadow: 0px 2px 5px rgba(145, 45, 69, 0.08);
-    border-radius: 40px;
-    border-style: none;
-    border: 3px solid #fff;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.33;
-    color: rgba(212, 20, 67, 0.5);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    // padding-left: 21px;
-    transition: 0.2s linear;
+  // &__input-field {
+  //   background: #fff;
+  //   box-shadow: 0px 2px 5px rgba(145, 45, 69, 0.08);
+  //   border-radius: 40px;
+  //   border-style: none;
+  //   border: 3px solid #fff;
+  //   font-weight: 700;
+  //   font-size: 15px;
+  //   line-height: 1.33;
+  //   color: rgba(212, 20, 67, 0.5);
+  //   padding-top: 15px;
+  //   padding-bottom: 15px;
+  //   // padding-left: 21px;
+  //   transition: 0.2s linear;
 
-    &:focus-within,
-    &focus,
-    &:hover {
-      @extend .modal__input-field;
-      border: 3px solid #d41443;
-      outline: #d41443;
-    }
-  }
+  //   &:focus-within,
+  //   &focus,
+  //   &:hover {
+  //     @extend .modal__input-field;
+  //     border: 3px solid #d41443;
+  //     outline: #d41443;
+  //   }
+  // }
 }
 
 .form {
@@ -184,15 +184,15 @@ input[type='checkbox']:checked::before {
     flex-direction: row;
   }
   &__input-field {
-    background: #ffffff;
+    background: getColor('formInputfield');
     box-shadow: 0px 2px 5px rgba(145, 45, 69, 0.08);
     border-radius: 40px;
     border-style: none;
-    border: 3px solid #fff;
+    border: 3px solid getColor('formInputfieldBorder');
     font-weight: 700;
     font-size: 15px;
     line-height: 1.33;
-    color: rgba(212, 20, 67, 0.5);
+    color: getColor('formInputfieldText');
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 21px;
@@ -201,8 +201,8 @@ input[type='checkbox']:checked::before {
     &focus,
     &:hover {
       @extend .form__input-field;
-      border: 3px solid #d41443;
-      outline: #d41443;
+      border: 3px solid getColor('formInputfieldBorderHover');
+      outline: getColor('formInputfieldOutlineHover');
     }
   }
   &__checkbox-container {
@@ -218,13 +218,13 @@ input[type='checkbox']:checked::before {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.3;
-    color: #d41443;
+    color: getColor('formParagraph');
   }
   &__underline {
     text-decoration: underline;
     transition: color 0.2s linear;
     &:hover {
-      color: #fff;
+      color: getColor('formParagraphUnderline');
     }
   }
 }

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #fff5f6;
+  background-color: getColor('footerBackground');
   min-width: 320px;
 
   &__container {
@@ -8,7 +8,7 @@
 
   &__heading {
     margin: 0 auto;
-    color: #ffa5ba;
+    color: getColor('footerHeading');
     text-transform: uppercase;
     display: inline-block;
     font-family: 'Titan One';
@@ -19,7 +19,7 @@
     max-width: 320px;
 
     &--color {
-      color: #d41443;
+      color: getColor('footerHeadingSecondary');
       padding: 17px 100px 0 0;
       font-family: 'Titan One';
       font-size: 34px;
@@ -37,26 +37,26 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #fea5bb;
-  fill: #ffffff;
+  background-color: getColor('footerIconBackground');
+  fill: getColor('footerIconFill');
   transition: 0.2s;
 
   &:hover,
   &:focus {
-    background-color: #d41443;
+    background-color: getColor('footerIconHover');
   }
 }
 
 .link {
   margin-left: 50px;
   text-decoration: none;
-  color: #000;
+  color: getColor('footerLinkText');
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 13px;
 
   &__address--phone {
-    color: #d41443;
+    color: getColor('footerLinkContact');
   }
 }
 
@@ -76,7 +76,7 @@
 }
 
 .address__container {
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid getColor('footerAdressContainerBorder');
 }
 
 .footer__paragraph {
@@ -84,7 +84,7 @@
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 13px;
-  color: #907e82;
+  color: getColor('footerParagraph');
   text-align: center;
 
   &--position {

@@ -1,5 +1,7 @@
+@import './variables';
+
 .header {
-  background: #ffb8ca;
+  background: getColor('headerBackground');
   position: relative;
 
   &__container {
@@ -25,7 +27,7 @@
     position: absolute;
     top: 25px;
     right: 20px;
-    stroke: #d41443;
+    stroke: getColor('headerMobileMenuToogle');
     cursor: pointer;
     background: transparent;
     border: none;
@@ -57,7 +59,7 @@
       height: 44px;
       border-radius: 22px;
       border: none;
-      background: #ffffff;
+      background: getColor('headerButton');
       font-family: 'DM Sans';
       font-style: normal;
       font-weight: 700;
@@ -70,7 +72,7 @@
 
       &:hover,
       &:focus {
-        background: #ecebeb;
+        background: getColor('headerButtonHover');
       }
     }
   }
@@ -106,23 +108,23 @@
       outline: none;
 
       &--active {
-        color: #d41443;
+        color: getColor('headerNavigationLinkHover');
 
         &:visited {
-          color: #d41443;
+          color: getColor('headerNavigationLinkHover');
         }
       }
 
       &--notactive {
-        color: #ffffff;
+        color: getColor('headerNavigationLink');
 
         &:visited {
-          color: #ffffff;
+          color: getColor('headerNavigationLink');
         }
 
         &:hover,
         &:focus {
-          color: #d41443;
+          color: getColor('headerNavigationLinkHover');
         }
       }
     }

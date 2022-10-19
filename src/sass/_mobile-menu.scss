@@ -1,5 +1,5 @@
 .mobile-menu {
-  background-color: #e17992;
+  background-color: getColor('mobilemenuBackground');
   position: fixed;
   top: 0;
   right: 0;
@@ -12,12 +12,12 @@
   flex-direction: column;
 
   &__icon {
-    stroke: #ffffff;
+    stroke: getColor('mobilemenuIcon');
   }
 
   &__close {
     position: absolute;
-    background-color: #e17992;
+    background-color: getColor('mobilemenuClose');
     border-radius: 50%;
     border-style: none;
     cursor: pointer;
@@ -35,10 +35,10 @@
     cursor: pointer;
     width: 186px;
     height: 44px;
-    background: #ffffff;
+    background: getColor('mobilemenuBuy');
     border-radius: 22px;
     border-style: none;
-    color: #d41443;
+    color: getColor('mobilemenuBuyText');
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
@@ -51,15 +51,15 @@
   &__buy-icon {
     width: 5.26px;
     height: 8px;
-    border: 2px solid #d41443;
+    border: 2px solid getColor('mobilemenuBuyIcon');
     border-style: none;
     fill: none;
-    stroke: #d41443;
+    stroke: getColor('mobilemenuBuyIconStroke');
   }
 
   &__link {
     text-decoration: none;
-    color: #ffffff;
+    color: getColor('mobilemenuLink');
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
@@ -68,7 +68,7 @@
     &:hover,
     &:focus,
     &--active {
-      color: #d41443;
+      color: getColor('mobilemenuLinkHover');
     }
   }
 
@@ -81,11 +81,11 @@
   &__item {
     padding-bottom: 12px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #e18298;
+    border-bottom: 1px solid getColor('mobilemenuItem');
   }
 
   &__item:first-child {
-    border-top: 1px solid #e18298;
+    border-top: 1px solid getColor('mobilemenuItem');
     padding-top: 12px;
   }
 }

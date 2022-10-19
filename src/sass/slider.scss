@@ -27,7 +27,7 @@
       width: 54px;
       height: 40px;
       position: absolute;
-      left: 40px;
+      left: 60px;
       top: 27px;
       z-index: -1;
     }
@@ -110,10 +110,10 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-      }
+  }
 
   &__arrow {
-    stroke:#d31342;
+    stroke: #d31342;
     fill: none;
   }
 
@@ -129,36 +129,59 @@
   &__nav {
     display: flex;
     gap: 18px;
+    margin-bottom: 86px;
   }
 
   &__indicator {
-    fill: #D9D9D9;
+    fill: #d9d9d9;
     cursor: pointer;
   }
 }
 
 .current-slide {
-    fill: #d31342;
+  fill: #d31342;
 }
 
 @media screen and (min-width: 768px) {
   .slider {
     max-width: 620px;
+    &__track-container {
+      height: 385px;
+      width: 620px;
+    }
+    &__nav {
+      margin-bottom: 119px;
+    }
   }
-  .slider__track-container {
-    height: 335px;
-    width: 620px;
+
+  .customer__comment-txt {
+    font-size: 14px;
+    &::before {
+      left: 30px;
+    }
+    &::after {
+      background: repeating-linear-gradient(
+        #fafafa,
+        #fafafa 31px,
+        rgba(225, 225, 225, 1) 1px,
+        rgba(225, 225, 225, 1) 32px
+      );
+      margin: 43px 50px 26px 50px;
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .slider {
     max-width: 926px;
-  }
-  .slider__track-container {
-    height: 303px;
-    width: 926px;
-  }
+    &__track-container {
+        height: 315px;
+        width: 926px;
+    }
+    &__nav {
+        margin-bottom: 137px;
+      }
+}
 
   .customer__img {
     margin-bottom: 15px;

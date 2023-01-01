@@ -1,16 +1,13 @@
 #### GoIT Fullstack Dev Course
 
 ## Web page:
-https://marcinwrembel.github.io/countryDataSearcher/
+https://marcinwrembel.github.io/project-icecream/
 
 ### Info:
 
-This project has been performed on REST Countries API (https://restcountries.com/) as a homework result of Fullstack Developer Course.
-Client can search basic country data. Searching starts dynamically during writting.
-As result are loaded countries for which client can get main information about countries (capital, languages, population). If result is up to 10 countries then possibility of unfolding country data appears.
+This project has been performed as a group work where I've been as a team leader. I've improved such skills as GitHub changes commiting by changes merging, html, css and js.
 
-### Tech details:
-- Libraries used: Notiflix, Lodash, 
+
 
 ### Technologies:
 HTML <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
